@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatronix, Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+        <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+        <img src="assets/logo.jpg" alt="logo" width="50" height="50"> 
+        <p>Innovatronix</p>
+    </div>
+
+    <nav id="navMenu">
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="#career">Career</a>
+        <a href="/Innovatronix_Project/contact.html">Contact</a>
+        <a href="/Innovatronix_Project/about.html">About</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>Innovative Solutions</h2>
+        <h1>Providing innovative and quality products and services with cutting edge technologies to address customer needs</h1>
+        <p>Established in 1991, Innovatronix Inc corporate office is located along Km 26, Sumulong Highway, Sta. Cruz, Antipolo City, 
+            Philippines.</p>
+        <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">READ MORE</button><br><br>
+    </div>
+
+    <picture>
+        <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
+        <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
+        <img src="assets/idphoto.jpg" alt="Profile Photo" width="170" height="170">
+    </picture>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="section" id="products">
+    <h2>Products</h2>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="assets/product1.jpg" alt="Display Board" >
+            <h2>Digital Display Board & Queuing Systems</h2>
+            <p>Description</p> <br>
+            <a class="btn" href="/Innovatronix_Project/product1.html">More Info</a>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/product2.jpg" alt="Energy Savers" >
+            <h2>Energy Savers & Appliance Protectors</h2>
+            <p>Description</p> <br>
+            <a class="btn" href="/Innovatronix_Project/product2.html">More Info</a>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/product3.jpg" alt="Photography Gear">
+            <h2>Photography Gear & Accessories</h2>
+            <p>Description</p> <br>
+            <a class="btn" href="/Innovatronix_Project/product3.html">More Info</a>
+        </div>
+
+        <div class="product-item">
+            <img src="assets/product4.jpg" alt="Tronix Imaging">
+            <h2>Tronix Imaging</h2>
+            <p>Description</p> <br>
+            <a class="btn" href="/Innovatronix_Project/product4.html">More Info</a>
+        </div>
+    </div>
+</section>
+
+<!-- BLOGS SECTION -->
+<section class="section" id="blog">
+    <h2>Recent Blogs</h2> <br>
+
+    <div class="blog-grid">
+        <div class="blog-item">
+            <img src="assets/blog1.jpg" alt="Blog 1">
+            <h2>Title</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+
+        <div class="blog-item">
+            <img src="assets/blog2.jpg" alt="Blog 2">
+            <h2>Title</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+
+        <div class="blog-item">
+            <img src="assets/blog3.jpg" alt="Blog 3">
+            <h2>Title</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+    </div> <br> <br>
+
+    <a class="btn" href="/Project/blog.html">View More Blogs</a>
+</section>
+
+<!-- CAREER SECTION -->
+<section class="section" id="career">
+    <h2>Job Vacancy</h2> <br>
+
+    <div class="career-grid">
+        <div class="career-item">
+            <div class="career-text">
+                <h2>Product Sales Officer</h2>
+                <p>Antipolo City, Full-time</p>
+            </div>
+            
+            <a class="btn" href="#" target="_blank">LinkedIn Job</a>
+        </div>
+
+        <div class="career-item">
+            <div class="career-text">
+                <h2>Engineering Technician</h2>
+                <p>Antipolo City, Full-time</p>
+            </div>
+            
+            <a class="btn" href="#" target="_blank">LinkedIn Job</a>
+        </div>
+
+        <div class="career-item">
+            <div class="career-text">
+                <h2>Store Officer for Tronix Imaging Center</h2>
+                <p>Full-time</p>
+            </div>
+            
+            <a class="btn" href="#" target="_blank">LinkedIn Job</a>
+        </div>
+
+        <div class="career-item">
+            <div class="career-text">
+                <h2>Senior Operations Officer</h2>
+                <p>Antipolo City, Full-time</p>  
+            </div>
+            
+            <a class="btn" href="#" target="_blank">LinkedIn Job</a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="section" id="testimonial">
+    <h2>Testimonials</h2> <br>
+
+    <div class="testimonial-grid">
+        <div class="testimonial-item">
+            <h2>Feedback</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+
+        <div class="testimonial-item">
+            <h2>Feedback</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+
+        <div class="testimonial-item">
+            <h2>Feedback</h2>
+            <p>Short Info</p> <br>
+            <a class="btn" href="#" target="_blank">Read More</a>
+        </div>
+    </div> <br> <br>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Connect with Me!</p>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
+        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
+        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
+        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
+        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
+    </div>
+    <p>© 2025 Paul's Portfolio</p>
+</footer>
+
+<script src="/Innovatronix_Project/backend/script.js"></script>
+
+</body>
+</html>
