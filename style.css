@@ -17,10 +17,10 @@ h2 {
     color: rgb(0, 0, 0);
 }
 
-p{
-   font-weight: 200;    
-   font-size: medium;
-   color: #9c9c9c;
+p {
+    font-weight: 200;
+    font-size: medium;
+    color: #9c9c9c;
 }
 
 .logo {
@@ -32,7 +32,7 @@ p{
     gap: 20px;
 }
 
-.logo p{
+.logo p {
     font-weight: bold;
     font-size: large;
 }
@@ -44,16 +44,16 @@ header {
     width: 100%;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -101,7 +101,7 @@ nav.show {
     align-items: center;
     margin-top: 80px;
     padding: 50px;
-    background-color:rgba(246, 248, 251, 1);
+    background-color: rgba(246, 248, 251, 1);
 }
 
 .hero-text {
@@ -139,94 +139,105 @@ picture img:hover {
 }
 
 .section {
-    margin-top: 0%;   
+    margin-top: 0%;
     padding: 60px;
 }
 
 .carousel {
-  position: relative;
-  width: 500px;       /* change size */
-  height: 350px;
-  overflow: hidden;
-  margin: auto;
-  border-radius: 10px;
+    position: relative;
+    width: 500px;
+    /* change size */
+    height: 350px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
-  width: 500px;       /* must match carousel width */
-  height: 350px;      /* must match carousel height */
-  object-fit: cover;
-}   
+    width: 500px;
+    /* must match carousel width */
+    height: 350px;
+    /* must match carousel height */
+    object-fit: cover;
+}
 
 /* Buttons */
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
 
 .carousel-btn:hover {
-  background: black;
+    background: black;
 }
 
 .summary-info {
-  display: flex;
-  margin: 0 auto;
-  padding: 60px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-  text-align: center;
-  background: #ffffff;
+    display: flex;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    background: #ffffff;
 }
 
 .summary-item {
-  flex: 1;
+    flex: 1;
 }
 
-/* big title (35+ Years, SEA Region, etc.) */
 .summary-item h3 {
-  margin-buttom: 0px;
-  font-weight: 700;
-  color: #020b27;       /* dark navy */
+    border-bottom: 0px;
+    font-weight: 700;
+    color: #020b27;
 }
 
 .summary-item p {
-  margin: 0;
-  font-size: 16px;
-  color: #8a919f;       /* gray */
+    margin: 0;
+    font-size: 16px;
+    color: #8a919f;
+    /* gray */
 }
 
 /* About Grid */
-.product-grid, .blog-grid {
+.product-grid,
+.blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.product-item, .blog-item {
+.product-item,
+.blog-item {
     height: 450px;
     width: 100%;
     background: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    transition: 0.3s ease;;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    ;
 }
 
 .product-item:hover {
@@ -234,7 +245,8 @@ picture img:hover {
     box-shadow: 0 4px 10px rgb(56, 48, 48, 0.9);
 }
 
-.product-item img, .blog-item img {
+.product-item img,
+.blog-item img {
     height: 250px;
     width: 100%;
     object-fit: cover;
@@ -242,24 +254,27 @@ picture img:hover {
     border-top-right-radius: 10px;
 }
 
-.product-item h4, .blog-item h4 {
+.product-item h4,
+.blog-item h4 {
     text-align: justify;
     margin: 30px 20px 10px 20px;
     color: rgb(99, 83, 83);
 }
 
-.product-item p, .blog-item p {
+.product-item p,
+.blog-item p {
     text-align: justify;
-    margin: 10px 20px 20px 20px; 
+    margin: 10px 20px 20px 20px;
     color: #9c9c9c;
 }
 
 #products {
-    background-color:rgba(246, 248, 251, 1);
+    background-color: rgba(246, 248, 251, 1);
 }
+
 #blog {
-    background-color:rgb(255, 255, 255);
-}   
+    background-color: rgb(255, 255, 255);
+}
 
 .blog-item:hover {
     transform: translateY(-5px);
@@ -277,23 +292,24 @@ picture img:hover {
     background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.career-text{
+.career-text {
     display: flex;
-    flex-direction: column;  /* put place under title */
+    flex-direction: column;
+    /* put place under title */
 }
 
-.career-text p{
+.career-text p {
     margin: 0px;
     color: #9c9c9c;
 }
 
-.career-text h3{
+.career-text h3 {
     margin: 0px;
 }
 
@@ -304,7 +320,7 @@ picture img:hover {
 }
 
 #career {
-    background-color:rgba(246, 248, 251, 1);
+    background-color: rgba(246, 248, 251, 1);
 }
 
 .testimonial-grid {
@@ -317,7 +333,7 @@ picture img:hover {
     background: rgb(234, 239, 239);
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
 }
 
@@ -340,7 +356,7 @@ picture img:hover {
     background: rgb(234, 239, 239);
     padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     transition: 0.3s ease;
 }
 
@@ -365,7 +381,8 @@ form {
     margin: 0 auto;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -418,7 +435,7 @@ footer .icons img:hover {
         padding: 20px;
         border-radius: 10px;
         gap: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     nav.show {
@@ -452,12 +469,12 @@ footer .icons img:hover {
         flex-direction: column;
         text-align: left;
     }
-    
+
     .career-item {
         align-self: stretch;
         text-align: center;
     }
-    
+
 }
 
 @media (max-width: 1300px) {
@@ -473,43 +490,50 @@ footer .icons img:hover {
 
 /* Animation */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0px); }
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .theme-toggle {
-  margin-left: 10px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid #ddd;
-  background: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  align-items: center;
+    margin-left: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    align-items: center;
 }
 
 /* DARK MODE
    body gets class="dark-mode" when active
 -----------------------------------------*/
 body.dark-mode {
-  /* your two colors as a vertical gradient background */
-  background: linear-gradient(#0A0F1F, #0D1424);
-  color: #F9FAFF;
+    /* your two colors as a vertical gradient background */
+    background: linear-gradient(#0A0F1F, #0D1424);
+    color: #F9FAFF;
 }
 
 /* header & nav */
 body.dark-mode header {
-  background: rgba(10, 15, 31, 0.95);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    background: rgba(10, 15, 31, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 body.dark-mode nav a {
-  color: #E5E7F5;
+    color: #E5E7F5;
 }
 
 body.dark-mode nav a:hover {
-  background-color: rgba(255,255,255,0.08);
-  color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
 }
 
 /* general text */
@@ -517,58 +541,59 @@ body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4 {
-  color: #F9FAFF;
+    color: #F9FAFF;
 }
 
 body.dark-mode p {
-  color: #CBD5F5;
+    color: #CBD5F5;
 }
 
-body.dark-mode #blog{
+body.dark-mode #blog {
     background-color: rgba(9, 25, 42, 1);
-    border-top: 1px solid rgba(255,255,255,0.14);
-    border-bottom: 1px solid rgba(255,255,255,0.14);
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 body.dark-mode .hero,
 body.dark-mode .section,
 body.dark-mode #products,
 body.dark-mode #career {
-  background-color: transparent;
-  border-top: 1px solid rgba(255,255,255,0.14);
-  border-bottom: 1px solid rgba(255,255,255,0.14);
+    background-color: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 /* cards – give them dark bg + light white border */
-body.dark-mode .product-item{
+body.dark-mode .product-item {
     background: rgba(9, 25, 42, 1);
 }
+
 body.dark-mode .blog-item,
 body.dark-mode .career-item,
 body.dark-mode .testimonial-item,
 body.dark-mode .contact-item {
-  background: rgba(7, 17, 40, 1);
-  border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+    background: rgba(7, 17, 40, 1);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
 }
 
 /* summary / stats row */
 body.dark-mode .summary-info {
-  background: rgba(9, 25, 42, 1);
+    background: rgba(9, 25, 42, 1);
 }
 
 /* forms */
 body.dark-mode input,
 body.dark-mode textarea {
-  background: #0D1424;x
+    background: #0D1424;
 }
 
 /* footer */
 body.dark-mode footer {
-  background-color: #0A0F1F;
+    background-color: rgba(9, 25, 42, 1);
 }
 
 body.dark-mode .theme-toggle {
-  background: #0D1424;
-  color: #F9FAFF;
+    background: #0D1424;
+    color: #F9FAFF;
 }
