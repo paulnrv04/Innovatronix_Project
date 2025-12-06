@@ -9,17 +9,18 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: rgb(99, 83, 83);
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     margin-bottom: 15px;
-    color: rgb(99, 83, 83);
+    color: rgb(0, 0, 0);
 }
 
 p{
    font-weight: 200;    
-   font-size: small;
+   font-size: medium;
+   color: #9c9c9c;
 }
 
 .logo {
@@ -184,7 +185,7 @@ picture img:hover {
 }
 
 .summary-info {
-  max-width: 1200px;
+  display: flex;
   margin: 0 auto;
   padding: 60px 40px;
   display: flex;
@@ -193,45 +194,25 @@ picture img:hover {
   gap: 60px;
   text-align: center;
   background: #ffffff;
-  border-top: 1px solid #edf0f5;
-  border-bottom: 1px solid #edf0f5;
 }
 
 .summary-item {
   flex: 1;
 }
 
-/* icon */
-.summary-item img {
-  width: 60px;          /* adjust to your icons */
-  height: 60px;
-  margin-bottom: 18px;
-}
-
 /* big title (35+ Years, SEA Region, etc.) */
-.summary-item h2 {
-  margin: 0 0 10px;
-  font-size: 26px;
+.summary-item h3 {
+  margin-buttom: 0px;
   font-weight: 700;
-  letter-spacing: 0.03em;
   color: #020b27;       /* dark navy */
 }
 
-/* small subtitle (Since 1987, Export Markets, etc.) */
 .summary-item p {
   margin: 0;
   font-size: 16px;
   color: #8a919f;       /* gray */
 }
 
-/* responsive: stack on small screens */
-@media (max-width: 768px) {
-  .summary-info {
-    flex-direction: column;
-    gap: 30px;
-    padding: 40px 20px;
-  }
-}
 /* About Grid */
 .product-grid, .blog-grid {
     display: grid;
@@ -243,7 +224,7 @@ picture img:hover {
     height: 450px;
     width: 100%;
     background: rgb(255, 255, 255);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     transition: 0.3s ease;;
 }
@@ -270,7 +251,7 @@ picture img:hover {
 .product-item p, .blog-item p {
     text-align: justify;
     margin: 10px 20px 20px 20px; 
-    color: rgb(99, 83, 83);
+    color: #9c9c9c;
 }
 
 #products {
@@ -309,7 +290,7 @@ picture img:hover {
 
 .career-text p{
     margin: 0px;
-    color: rgb(156, 156, 156);
+    color: #9c9c9c;
 }
 
 .career-text h3{
@@ -476,6 +457,7 @@ footer .icons img:hover {
         align-self: stretch;
         text-align: center;
     }
+    
 }
 
 @media (max-width: 1300px) {
@@ -493,4 +475,100 @@ footer .icons img:hover {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0px); }
+}
+
+.theme-toggle {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+}
+
+/* DARK MODE
+   body gets class="dark-mode" when active
+-----------------------------------------*/
+body.dark-mode {
+  /* your two colors as a vertical gradient background */
+  background: linear-gradient(#0A0F1F, #0D1424);
+  color: #F9FAFF;
+}
+
+/* header & nav */
+body.dark-mode header {
+  background: rgba(10, 15, 31, 0.95);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+body.dark-mode nav a {
+  color: #E5E7F5;
+}
+
+body.dark-mode nav a:hover {
+  background-color: rgba(255,255,255,0.08);
+  color: #ffffff;
+}
+
+/* general text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+  color: #F9FAFF;
+}
+
+body.dark-mode p {
+  color: #CBD5F5;
+}
+
+body.dark-mode #blog{
+    background-color: rgba(9, 25, 42, 1);
+    border-top: 1px solid rgba(255,255,255,0.14);
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+body.dark-mode .hero,
+body.dark-mode .section,
+body.dark-mode #products,
+body.dark-mode #career {
+  background-color: transparent;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+/* cards – give them dark bg + light white border */
+body.dark-mode .product-item{
+    background: rgba(9, 25, 42, 1);
+}
+body.dark-mode .blog-item,
+body.dark-mode .career-item,
+body.dark-mode .testimonial-item,
+body.dark-mode .contact-item {
+  background: rgba(7, 17, 40, 1);
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+
+/* summary / stats row */
+body.dark-mode .summary-info {
+  background: rgba(9, 25, 42, 1);
+}
+
+/* forms */
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #0D1424;x
+}
+
+/* footer */
+body.dark-mode footer {
+  background-color: #0A0F1F;
+}
+
+body.dark-mode .theme-toggle {
+  background: #0D1424;
+  color: #F9FAFF;
 }

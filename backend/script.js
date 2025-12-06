@@ -2,6 +2,8 @@ const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
 const icon = hamburger.querySelector("i");
 const ref = carousel();
+const darkMode = darkModeToggle();
+
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 
@@ -51,3 +53,20 @@ function carousel() {
     }, 3000);
 }
 
+function darkModeToggle() {
+  const toggleBtn = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // optional: remember choice
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = body.classList.toggle('dark-mode');
+    toggleBtn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+}
