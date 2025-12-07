@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,161 +12,214 @@
 
 <body>
 
-<header>
-    <div class="logo">
-        <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-        <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-        <img src="assets/logo.jpg" alt="logo" width="50" height="50"> 
-        <p>Innovatronix</p>
-    </div>
+    <header>
+        <div class="logo">
+            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
+            <h4>Innovatronix</h4>
+        </div>
+        <nav id="navMenu">
+            <a href="homepage.html">Home</a>
+            <a href="homepage.html#products">Products</a>
+            <a href="homepage.html#blogs">Blog</a>
+            <a href="homepage.html#career">Career</a>
+            <a href="contact.html">Contact</a>
+            <a href="#home"><b>About</b></a>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </nav>
 
-    <nav id="navMenu">
-        <a href="homepage.html">Home</a>
-        <a href="homepage.html#products">Products</a>
-        <a href="homepage.html#blogs">Blog</a>
-        <a href="homepage.html#career">Career</a>
-        <a href="contact.html">Contact</a>
-        <a href="#home">About</a>
-    </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
 
-    <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-</header>
-
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="hero-text">
-        <h2>About</h2>
-    </div>
-
-    <picture>
-        <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-        <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-        <img src="assets/idphoto.jpg" alt="Profile Photo" width="170" height="170">
-    </picture>
-</section>
-
-<!-- PRODUCTS SECTION -->
-<section class="section" id="aboutus"> <br>
-    <h1>About Us</h1>
-
-    <div class="section-grid">
-        <div class="section-header">
-            <h2>INNOVATRONIX</h2>
-            <p>Innovatronix Inc has a diverse business portfolio - electronics design and assembly,
-                photography and imaging, power electronics, electric vehicles and aquaculture farming.</p> <br>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>About Us, Innovatronix</h1>
+            <p>Innovatronix Inc. is a Filipino technology company with a diverse
+                portfolio that spans electronics design and assembly, photography
+                and imaging, power electronics, electric vehicles, and aquaculture farming.</p> <br>
         </div>
 
-        <div class="section-header">
-            <p>Established in 1991, Innovatronix Inc corporate office is located along Km 26, Sumulong 
-                Highway, Sta. Cruz, Antipolo City, Philippines.</p> <br>
+        <img src="assets/aboutus1.jpg" alt="group company photo" id="aboutusphoto">
+    </section>
+
+    <section class="aboutus"> <br>
+        <div class="section-grid">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p>Experiencess that shaped our legacy of excellence</p> <br>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <h2 class="timeline-year">1987</h2>
+            <div class="timeline-card">
+                <h3>Foundation</h3>
+                <p>Innovatronix was founded by Ramon Castillo, a former senior engineer at Intel.
+                    Beginning as a small electronics company, it focused on innovative electronics
+                    work for major firms such as Intel, Motorola, and Telefunken.</p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>In 1987, Ramon Castillo, a former senior engineer at Intel, left the manufacturing firm of computer components and integrated circuits, to put
-                up Innovatronix, Inc. It is a fitting acronym for a company promising to engage in "innovative electronics" with Castillo as the engineer and one
-                technician. For the first two years of operations, the company relied on projects from Intel, then to Motorola, Telefunken and later on to 
-                companies in other industries, like manufacturing and packaging.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">1991</h2>
+            <div class="timeline-card">
+                <h3>First Major Breakthrough</h3>
+                <p> Innovatronix was commissioned to design and build the electronic scoreboards
+                    for the Southeast Asian (SEA) Games held in Manila.<br>
+                    This project marked a turning point, establishing Innovatronix
+                    as a trusted leader in electronic display systems.<p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>The fact that Innovatronix was a small company and without a track record to boast did not become a hindrance to offer the products and
-                services to industrial giants. These companies need Tronix services for productivity development. From this time on, sales picked up.
-                Innovatronix has managed to increase its customer base through recommendations from its existing clients. Being the only Filipino firm
-                experienced in making electronic displays, and Innovatronix was contracted to make the scoreboards for the Southeast Asian games held in
-                Manila in November 1991. This big break became the starting point of bigger opportunities for Innovatronix.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">90s</h2>
+            <div class="timeline-card">
+                <h3>Expansion Into Consumer Electronics</h3>
+                <p> With growing demand, Innovatronix introduced the TRONIX brand,
+                    launching a line of consumer electronic products including:<p>
+                        <ul>
+                            <li>Power-On-Delay (POD10)</li>
+                            <li>Electronic ballasts</li>
+                            <li>Automatic voltage regulators (AVRs)</li>
+                            <li>Air-conditioner controllers</li>
+                        </ul>
+                        <p>These products soon became common in Filipino households.</p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>From scoreboards, Innovatronix's TRONIX brand on consumer electronic products was launched. Up to this date, Innovatronix had reached
-                Filipino household with its Power-on-Delay (POD10), electronic ballasts, AVRs and ACT20 for window-type air conditioners. In 1997, when the
-                Asian financial crisis came, Innovatronix was resilient by venturing into another business concept. This was due to the advent of digital cameras.
-                Castillo, also a photography hobbyist, established the Tronix Imaging Centers in 1998. It started in Farmers Plaza, Ever Ortigas and Pavilion Mall
-                in Biñan, Laguna offering digital imaging services plus retail of Tronix brand of consumer electronics.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">1997</h2>
+            <div class="timeline-card">
+                <h3>Resilience During the Asian Financial Crisis</h3>
+                <p> Despite economic challenges, the company continued innovating.
+                    Ramon Castillo recognized the rise of digital imaging and prepared
+                    to enter a new industry.<p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>Over a few years, Innovatronix's network of outlets grew rapidly, covering the entire Metro Manila and nearby provinces. By 2006, Tronix
-                Imaging Centers have scattered all over the country. It is one of the pioneers in the digital photo studio industry. Tronix Imaging Centers offer
-                wide-range of digital imaging services.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">1998</h2>
+            <div class="timeline-card">
+                <h3>Launch of Tronix Imaging Centers</h3>
+                <p> Capitalizing on the digital camera boom, Innovatronix opened
+                    Tronix Imaging Centers—offering digital imaging services and
+                    retailing TRONIX consumer products.Over the next few years,
+                    the outlets expanded rapidly across Metro Manila and nearby provinces,
+                    becoming pioneers in the digital photo studio industry.<p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>Also in 2006, Innovatronix Inc launched its own brand of photo equipment products. This product line is now exported to over 80 countries
-                worldwide. While it used to export assembled electronic parts during the 1990s but using its own brand started the leap for Innovatronix to
-                start doing business in the global marketplace, proving that a once-small Filipino enterprise can rise up and win its own challenges.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">2006</h2>
+            <div class="timeline-card">
+                <h3>Global Expansion of Photography Equipment</h3>
+                <p> Innovatronix introduced its own brand of photo and studio equipment,
+                    which eventually reached over 80 countries worldwide.
+                    This marked the company’s official entrance into the global
+                    marketplace under its own brand.<p>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>In 2010, after years of continuous growth, Innovatronix Inc moved to its new office and manufacturing facility along Sumulong Highway,
-                Antipolo City. The 3-storey building on a 50,000 sq ft lot is now housing its retail and export business units, product research & engineering and 
-                administrative offices.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">2010</h2>
+            <div class="timeline-card">
+                <h3>New Headquarters & Manufacturing Facility</h3>
+                <p> The company moved into its modern 3-storey facility along Sumulong
+                    Highway, Antipolo City, occupying a 50,000 sq ft property that houses:<p>
+                        <ul>
+                            <li>Retail & export units</li>
+                            <li>Product research & engineering</li>
+                            <li>Administrative offices</li>
+                        </ul>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>In 2012, after years of R&D on Aquaculture Farming, Innovatronix started operations on its Aquaculture Business Unit - growing out shrimps.
-                Initially intended for local market supplying the country's largest seafood distributors and dealers, it aims to export freshly chilled shrimps later
-                on. The Aquaculture Farm is located in Jala-jala Rizal and sits on a 1.6 ha lot, consisting of three (3) greenhouses. This facility has an expected
-                capacity of 700 tonnes a year. For more information, click here.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">2012</h2>
+            <div class="timeline-card">
+                <h3>Expansion Into Aquaculture Farming</h3>
+                <p> Innovatronix diversified once more by establishing its Aquaculture
+                    Business Unit—a modern shrimp-growing facility located in Jala-jala,
+                    Rizal.<br>
+                    Designed for both local distribution and future export, the farm features:<p>
+                        <ul>
+                            <li>1.6-hectare property</li>
+                            <li>Three greenhouse systems</li>
+                            <li>Production capacity of up to 700 tonnes per year</li>
+                        </ul>
+            </div>
         </div>
 
-        <div class="section-header">
-            <p>The company still carries products it started to offer, only complex in terms of design and technology. Truly, as the company grows, it still lives
-                on with its name; continuing on innovating and providing better ideas.
-            </p> <br>
+        <div class="timeline-item">
+            <h2 class="timeline-year">Now</h2>
+            <div class="timeline-card">
+                <h3>Innovation at the Core</h3>
+                <p> Innovatronix continues to grow as a multi-industry technology company,
+                    staying true to its founding vision:<br>
+                    <b>to innovate continuously and create better ideas that improve everyday life.</b>
+                    <p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="mv" id="mvaffiliations">
-    <div class="mv-text">
-        <h2>Mission</h2>
-        <p>- To provide opportunities both for professional and financial growth for every member of Innovatronix family</p>
-        <p>- To encourage people to suggest new ideas for continuous growth</p>
-        <p>- To nurture and promote honesty, loyalty, concerns for property, excellence, thrift, unity and camaraderie as prime virtues</p>
-        <p>- To help, by realizing its social obligation, communities in uplifting the quality of life</p>
+    <section class="mv" id="affiliations">
+        <div id="missionvision">
 
-        <h2>Vision</h2>
-        <p>- To strive for quality, believing in synonymy of quality and Innovatronix</p>
-        <p>- To ensure Total Customer Satisfaction, realizing the survival in the business is due to customers' support</p>
-        <p>- To become one of the top technology firms in the country and the world</p>
-    </div>
+            <div class="affiliation-card">
+                <h2>Mission</h2>
+                <ul>
+                    <li>To provide opportunities both for professional and financial growth for every member of
+                        Innovatronix family</li>
+                    <li>To encourage people to suggest new ideas for continuous growth</li>
+                    <li>To nurture and promote honesty, loyalty, concerns for property, excellence, thrift, unity and
+                        camaraderie as prime virtues</li>
+                    <li>To help, by realizing its social obligation, communities in uplifting the quality of life</li>
+                </ul>
+            </div>
 
-    <div class="mv-text">
-        <h2>Affiliations</h2>
-        <p>- EIAPI Member (Electronics Industry Association of the Philippines, Inc)</p>
-        <p>- FIS Member (Filipino Inventors Society)</p>
-        <p>- PHILEXPORT Member (Philippine Exporters Confederation Inc)</p>
-    </div>
+            <div class="affiliation-card">
+                <h2>Vision</h2>
+                <ul>
+                    <li>To strive for quality, believing in synonymy of quality and Innovatronix</li>
+                    <li>To ensure Total Customer Satisfaction, realizing the survival in the business is due to
+                        customers' support</li>
+                    <li>To become one of the top technology firms in the country and the world</li>
+                </ul>
+            </div>
 
-</section>
+            <div class="affiliation-card affiliation-full">
+                <h2>Affiliations</h2>
+                <ul>
+                    <li>EIAPI Member (Electronics Industry Association of the Philippines, Inc)</li>
+                    <li>FIS Member (Filipino Inventors Society)</li>
+                    <li>PHILEXPORT Member (Philippine Exporters Confederation Inc)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
-<!-- FOOTER -->
-<footer>
+    <!-- FOOTER -->
+    <footer>
 
 
-    <p>Connect with Me!</p>
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
-        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
-        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
-        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
-        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
-    </div>
-    <p>© 2025 Paul's Portfolio</p>
-</footer>
+        <p>Connect with Me!</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg"
+                    alt="LinkedIn"></a>
+            <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
+            <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
+            <a href="#"><img src="assets/email.jpg" alt="Email"></a>
+            <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
+        </div>
+        <p>© 2025 Paul's Portfolio</p>
+    </footer>
 
-<script src="/Innovatronix_Project/backend/script.js"></script>
-
+    <script src="backend/script.js"></script>
 </body>
+
 </html>
