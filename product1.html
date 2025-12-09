@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovatronix, Inc.</title>
+    <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,184 +13,135 @@
 
 <body>
 
-<header>
-    <div class="logo">
-        <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-        <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-        <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-        <h4>Innovatronix</h4>
-    </div>
-
-    <nav id="navMenu">
-        <a href="homepage.html">Home</a>
-        <a href="#products">Products</a>
-        <a href="homepage.html#blog">Blog</a>
-        <a href="homepage.html#career">Career</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-    </nav>
-
-    <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-</header>
-
-<!-- PRODUCTS SECTION -->
-<section class="section" id="products"> <br>
-    <h1>Electronic Displays</h1>
-    <p>Explore our various types of scoreboards, timers, and digital displays.</p>
-
-    <section class="hero" id="home">
-        <picture>
-            <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-            <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-            <img src="assets/idphoto.jpg" alt="Innovatronix SureScore 2 Image" width="170" height="170">
-        </picture>
-
-        <div class="hero-text">
-            <h2>Innovatronix SureScore 2</h2>
-            <p><bold>Feature:</bold></p>
-            <li>Wireless UHF Connection</li>
-            <li>Battery-powered main controller. Can also be powered using MicroUSB charger or powerbank.</li>
-            <li>Up to 7 hours continuous use from single full charge</li>
-            <li>With Wireless Air Horn</li>
-            <li>Customizable Team Names</li>
-            <li>Patent number : 2-2016-00050</li>
-
-            <p><bold>Product Inclusion:</bold></p>
-            <li>Main Controller</li>
-            <li>Sub-Controller</li>
-            <li>Display Receiver</li>
-            <li>3 x HDMI Cable</li>
-            <li>3 x Antenna for Display Receivers</li>
-            <li>Wireless Air Horn</li>
-            <li>Power Cable</li>
-            <li>4 x 5V MicroUSB</li>
-            <li>SureScore 2 User's Guide</li>
-            <li>Carrying Bag</li> <br>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+    <header>
+        <div class="logo">
+            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
+            <h4>Innovatronix</h4>
         </div>
+
+        <nav id="navMenu">
+            <a href="homepage.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="homepage.html#blog">Blog</a>
+            <a href="homepage.html#career">Career</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="section" id="products"> <br>
+        <h1>Digital Display Board & Queuing Systems</h1>
+        <p>These products are designed for easy use, coupled with significant 
+        functions that could spell big savings</p>
     </section>
 
-    <section class="hero" id="home">
-        <picture>
-            <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-            <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-            <img src="assets/idphoto.jpg" alt="Electronic Score Board Image" width="170" height="170">
-        </picture>
-        
-        <div class="hero-text">
-            <h2>Electronic Score Board</h2>
-            <p><bold>Feature:</bold></p>
-            <li>Easy to install and maintain</li>
-            <li>Low-cost and highly reliable</li>
-            <li>Use of 6″ seven segment bright LED</li>
-            <li>Use of aluminum-reinforced casing</li>
-            <li>With 3-4 hours back-up battery for main controller</li>
-            <li>With provision for extra Main Display Board</li>
-            <li>One (1) year limited warranty</li>
-            <li>Game time display on Shot Clock Display Board</li>
+    <section class="ElectronicD">
+        <div class="ElectronicD-grid">
 
-            <p><bold>Complete Set:</bold></p>
-            <li>Main Display</li>
-            <li>Main Controller</li>
-            <li>Shot Clock Set (2 pcs.)</li>
-            <li>Team Fouls with Periods Display</li>
-            <li>Professional Airhorn</li>
+            <div class="ElectronicD-item">
+                <img src="assets/product1.jpg" alt="Display Board">
+                <h4>Innovatronix SureScore</h4>
+                <p>Innovatronix SureScore is a line of electronic display products designed for sports and event
+                    management. These products include electronic scoreboards, shot clocks, timers, and related
+                    accessories that provide accurate and reliable timekeeping and scoring solutions for various sports
+                    and activities.</p>
+                <button class="btn open-modal" data-product="surescore">View Details</button>
+            </div>
 
-            <p><bold>Standard Set:</bold></p>
-            <li>Main Display</li>
-            <li>Main Controller</li>
-
-            <p><bold>Technical Specifications:</bold></p>
-            <li>Power Source – 220 VAC for Main Controller; 220 VAC for Main Display</li>
-            <li>Digit Size/Color – 6″ x 3″ / Red and Green</li>
-            <li>Cable Length – 1 piece 75 meters (250 ft.) for Main Display to Controller; 2 pieces 35 meters (116.67 ft.) for Shot Clock to Main Controller</li>
-            <li>Back-up Battery – 3-4 hours (Main Controller only)</li> <br>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+            <div class="ElectronicD-item">
+                <img src="assets/product1.jpg" alt="Display Board">
+                <h4>Electronic Score Board</h4>
+                <p>Electronic Score Board is a line of electronic display products designed for sports and event
+                    management. These products include electronic scoreboards, shot clocks, timers, and related
+                    accessories that provide accurate and reliable timekeeping and scoring solutions for various
+                    sports and activities.</p>
+                <button class="btn open-modal" data-product="scoreboard">View Details</button>
+            </div>
         </div>
-    </section>
 
-    <section class="hero" id="home">
-        <picture>
-            <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-            <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-            <img src="assets/idphoto.jpg" alt="Portable Electronic Scoreboard Image" width="170" height="170">
-        </picture>
-        
-        <div class="hero-text">
-            <h2>Portable Electronic Scoreboard</h2>
-            <p><bold>Feature:</bold></p>
-            <li>Portable tabletop scroboard for indoor and outdoor programs</li>
-            <li>Uses super bright LED displays</li>
-            <li>Displays time, score,ball possession, team fouls and period</li>
-            <li>Built-in control panel located at the back</li>
-            <li>With provisions for add-on shot clock set</li>
-            <li>With built-in buzzer</li>
-            <li>Suitable for basketball, volleyball and other sports</li>
+        <div class="ElectronicD-grid">
 
-            <p><bold>Technical Specifications:</bold></p>
-            <li>Power Source – Autovolt (90-250VAC)</li>
-            <li>Digit Size/Color – Time of the Game – 3″ Red; Scores (Home & Visitors) – 2.5″ / Red; Period & Team Fouls – 2″ / Yellow & Green</li>
-            <li>Dimension (LxWxH) – 19.5 x 5″ x 13″</li>
-            <li>Weight – 11.8 lbs</li>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+            <div class="ElectronicD-item">
+                <img src="assets/product1.jpg" alt="Display Board">
+                <h4>Portable Electronic Scoreboard</h4>
+                <p>Portable Electronic Scoreboard is a line of electronic display products designed for sports and event
+                    management. These products include electronic scoreboards, shot clocks, timers, and related
+                    accessories that provide accurate and reliable timekeeping and scoring solutions for various sports
+                    and activities.</p>
+                <button class="btn open-modal" data-product="portablescoreboard">View Details</button>
+            </div>
+
+
+            <div class="ElectronicD-item">
+                <img src="assets/product1.jpg" alt="Display Board">
+                <h4>Independent Shot Clock</h4>
+                <p>Independent Shot Clock is a line of electronic display products designed for sports and event
+                    management.
+                    These products include electronic scoreboards, shot clocks, timers, and related accessories that
+                    provide
+                    accurate and reliable timekeeping and scoring solutions for various sports and activities.</p>
+                <button class="btn open-modal" data-product="shotclock">View Details</button>
+            </div>
         </div>
-    </section>
 
-    <section class="hero" id="home">
-        <picture>
-            <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-            <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-            <img src="assets/idphoto.jpg" alt="Independent Shot Clock Image" width="170" height="170">
-        </picture>
-        
-        <div class="hero-text">
-            <h2>Independent Shot Clock</h2>
-            <p><bold>Feature:</bold></p>
-            <li>Has a built-in buzzer</li>
-            <li>Has four preset values of 30, 25, 24 and 23 seconds</li>
+        <div class="ElectronicD-grid">
 
-            <p><bold>Technical Specifications:</bold></p>
-            <li>Power Source – 220 VAC (Shot Clock Display and Controller)</li>
-            <li>Shot Clock Display Unit (LxWxH) – 16″ x 3″ x 13″</li>
-            <li>Shot Clock Controller (LxWxH) – 3.5″ x 10″ x 4.25″</li>
-            <li>Digit Size / Color – 6″ x 4″ / Red</li>
-            <li>Cable Length – 2 x 35 meters (116.67 ft.)</li>
-            <li>Shot Clock Display Weight – 11 lbs</li>
-            <li>Shot Clock Controller Weight – 11 lbs</li>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+            <div class="ElectronicD-item">
+                <img src="assets/product1.jpg" alt="Display Board">
+                <h4>10-Minute Timer</h4>
+                <p> 10-Minute Timer is a line of electronic display products designed for sports and event management.
+                    These products include electronic scoreboards, shot clocks, timers, and related accessories that
+                    provide
+                    accurate and reliable timekeeping and scoring solutions for various sports and activities. </p>
+                <button class="btn open-modal" data-product="minutetimer">View Details</button>
+            </div>
         </div>
-    </section>
 
-    <section class="hero" id="home">
-        <picture>
-            <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-            <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-            <img src="assets/idphoto.jpg" alt="10-Minute Timer Image" width="170" height="170">
-        </picture>
-        
-        <div class="hero-text">
-            <h2>10-Minute Timer</h2>
-            <p><bold>Technical Specifications:</bold></p>
-            <li>Dimension : 27"(Length) x 13"(Height) x 4.5"(Thickness)</li>
-            <li>Digit Size / Color : 6 " / Red (4 digits)</li>
-            <li>Visibility : 75 to 100 meters (246 to 328 ft.)</li>
-            <li>Optional : 1 Slave display board (4 digits)</li>
-            <li>With back-up battery for 3 to 4 hours</li>
-            <li>Automatic buzzer after the set time has elapsed</li>
-            <li>Fiberglass-reinforced wood enclosure (indoor use only)</li>
-            <li>Count-down timer for 10 minutes (also programmable for count-up timer)</li> <br>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+        <div id="product-modal" class="modal">
+            <div class="modal-dialog">
+                <button class="modal-close">&times;</button>
+
+                <div class="modal-left">
+                    <img class="modal-img" src="" alt="">
+                </div>
+
+                <div class="modal-right">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-desc"></p>
+
+                    <div class="modal-section section-features">
+                        <h3>Features</h3>
+                        <ul></ul>
+                    </div>
+
+                    <div class="modal-section section-complete">
+                        <h3>Complete Set</h3>
+                        <ul></ul>
+                    </div>
+
+                    <div class="modal-section section-standard">
+                        <h3>Standard Set</h3>
+                        <ul></ul>
+                    </div>
+
+                    <div class="modal-section section-technical">
+                        <h3>Technical Specifications</h3>
+                        <ul></ul>
+                    </div>
+                    <button class="btn modal-manual-btn" style="margin-top: 20px;">Product Manual</button>
+                </div>
+            </div>
         </div>
+        <script src="backend/modal.js"></script>
     </section>
-    </div>
 
     <section class="hero" id="home">
         <div class="hero-text">
@@ -197,32 +150,32 @@
             <li>+63917-667-3864 / +63918-271-5950</li>
             <li>+632-8661-4108 / +632-8571-6530</li>
             <li>marketing@innovatronix.com</li> <br>
-            
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product Manual</button><br><br>
+
+            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">
+            Schedule Visit</button><br><br>
         </div>
     </section>
     </div>
 
-</section>
-<hr>
-
-<!-- FOOTER -->
-<footer>
+    <!-- FOOTER -->
+    <footer>
 
 
-    <p>Connect with Me!</p>
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
-        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
-        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
-        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
-        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
-    </div>
-    <p>© 2025 Paul's Portfolio</p>
-</footer>
+        <p>Connect with Me!</p>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg"
+                    alt="LinkedIn"></a>
+            <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
+            <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
+            <a href="#"><img src="assets/email.jpg" alt="Email"></a>
+            <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
+        </div>
+        <p>© 2025 Paul's Portfolio</p>
+    </footer>
 
-<script src="/Innovatronix_Project/backend/script.js"></script>
+    <script src="/Innovatronix_Project/backend/script.js"></script>
 
 </body>
+
 </html>
