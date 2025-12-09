@@ -160,9 +160,24 @@
     }
 
     .career-btn:hover,
+    .subscribe-btn:hover,
     .btn:hover {
         background-color: #383030;
         color: #fff;
+    }
+
+    .subscribe-btn {
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: rgb(46, 31, 159);
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
     }
 
     /* ===========================
@@ -341,7 +356,10 @@
     .section-title {
         margin: 0;
         padding-top: 10px;
-        background-color: rgb(46, 31, 159);
+        background: linear-gradient(135deg, 
+            rgba(46, 31, 159, 0.5) 0%, 
+            rgba(30, 60, 114, 0.9) 50%,
+            rgba(46, 31, 159, 0.5) 100%);
     }
 
     .section-title h1 {
@@ -357,7 +375,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
-        max-width: 1200px;
+        width: 1500px;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -434,14 +452,17 @@
 
     /* Sidebar Content*/
     .blog-sidebar {
-        background: white;
+        background: rgb(234, 239, 239);
+        width: 380px;
         padding: 25px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
         align-self: start;
     }
 
     .search-box {
         display: flex;
+        width: 330px;
     }
 
     .search-box input {
@@ -488,6 +509,71 @@
         background-color: #383030;
         color: #fff;
     }
+
+    .blog-box {
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        background: rgba(246, 248, 251, 1);
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease;
+    }
+
+    .blog-box:hover {
+        transform: translateY(-5px);
+        border: #2e1f9f .5px solid;
+        box-shadow: 0 5px 15px rgb(46, 31, 159, 0.5);
+    }
+
+    .trending {
+        background-image: url(assets/product1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 40px 0;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+        
+    .trending::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, 
+            rgba(10, 38, 71, 0.9) 0%, 
+            rgba(30, 60, 114, 0.85) 50%, 
+            rgba(42, 82, 152, 0.2) 100%);
+        z-index: 1;
+    }
+        
+    .trending-container {
+        position: relative;
+        z-index: 2;
+        padding: 50px 40px;
+        color: white;
+    }
+
+    .newsletter-form {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .newsletter-form input {
+        padding: 12px 15px;
+        border-color: rgb(46, 31, 159, 1);
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        width: 400px;
+        max-width: 100%;
+        margin-right: 10px;
+    }   
 
     /* ===========================
     11. Career / Job Vacancies
@@ -721,6 +807,7 @@
         text-align: center;
     }
 
+    .blog-sidebar .icons img,
     footer .icons img {
         width: 45px;
         height: 45px;
@@ -730,6 +817,7 @@
         transition: 0.3s ease;
     }
 
+    .blog-sidebar .icons img:hover,
     footer .icons img:hover {
         transform: scale(1.2);
         background: #383030;
@@ -767,6 +855,14 @@
     /* ===========================
     20. Responsive Breakpoints
     =========================== */
+
+    /* <= 1300px */
+    @media (max-width: 1500px) {
+        .blog-container {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
 
     /* <= 1300px */
     @media (max-width: 1300px) {
@@ -861,6 +957,15 @@
 
         .product-section {
             display: inline-block
+        }
+
+        .blog-container {
+            display: inline;
+        }
+
+        .blog-sidebar {
+            width: 100%;
+            margin-top: 40px;
         }
     }
 
