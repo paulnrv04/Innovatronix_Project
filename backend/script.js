@@ -1,6 +1,7 @@
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
 const icon = hamburger.querySelector("i");
+const car = carousel();
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
