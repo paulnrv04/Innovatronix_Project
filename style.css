@@ -209,9 +209,8 @@
     }
 
     .carousel-item {
-        width: 500px;
-        height: 350px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     /* Carousel buttons */
@@ -341,10 +340,11 @@
         background-color: rgb(255, 255, 255);
     }
 
-    .ElectronicD-grid {
+    .ElectronicD-grid,
+    .tronix-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
+        gap: 20px;
     }
 
     .ElectronicD-item {
@@ -580,6 +580,74 @@
     .blog-content p {
         color: black;
     }
+
+    /* ===========================
+   9.1 Comments Show/Hide Styles
+   =========================== */
+
+.comments-toggle {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.toggle-btn {
+    background: rgb(46, 31, 159);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toggle-btn:hover {
+    background: #383030;
+    transform: translateY(-2px);
+}
+
+.comment-list {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.comment-list.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.show-text {
+    display: inline;
+}
+
+.hide-text {
+    display: none;
+}
+
+.comment-list.hidden ~ .comments-toggle .toggle-btn .show-text {
+    display: inline;
+}
+
+.comment-list.hidden ~ .comments-toggle .toggle-btn .hide-text {
+    display: none;
+}
+
+.comment-list:not(.hidden) ~ .comments-toggle .toggle-btn .show-text {
+    display: none;
+}
+
+.comment-list:not(.hidden) ~ .comments-toggle .toggle-btn .hide-text {
+    display: inline;
+}
 
     .comment img {
         width: 30px;
@@ -835,7 +903,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 100px;
+        padding: 40px;
         background-color: rgba(246, 248, 251, 1);
     }
 
@@ -922,7 +990,6 @@
     .affiliation-card {
         display: grid;
         grid-template-columns: 160px 1fr;
-        /* title | content */
         gap: 20px;
         padding: 30px;
         background: #fff;
@@ -1250,6 +1317,18 @@
             justify-content: center;
             text-align: center;
         }
+
+        .ElectronicD {
+            padding: 40px;
+        }
+
+        .ElectronicD-grid {
+            padding: 20px 0 0 0 ;
+        }
+
+        .tronix-grid {
+            display: inline;
+        }
     }
 
     /* <= 800px */
@@ -1273,6 +1352,17 @@
             padding: 15px 25px;
             width: 140px;
             height: 50px;
+        }
+
+        .carousel {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            margin: 0 40px;
         }
     }
 

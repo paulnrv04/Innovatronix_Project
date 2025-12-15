@@ -51,3 +51,5 @@ function carousel() {
     update();
   }, 3000);
 }
+
+// Show and Hide the Blog Comment
