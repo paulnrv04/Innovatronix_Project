@@ -1,106 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovatronix, Inc.</title>
+    <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-        <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-        <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-        <h4>Innovatronix</h4>
-    </div>
-
-    <nav id="navMenu">
-        <a href="homepage.html">Home</a>
-        <a href="homepage.html#products">Products</a>
-        <a href="homepage.html#blog">Blog</a>
-        <a href="homepage.html#career">Career</a>
-        <a href="#"><b>Contact</b></a>
-        <a href="about.html">About</a>
-        <button id="themeToggle" class="theme-toggle">🌙</button>
-    </nav>
-
-    <div class="hamburger" id="hamburger">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-</header>
-
-
-<!-- CONTACT SECTION -->
-<section class="section" id="contact">
-    <div class="section-title">
-        <h1>Contact</h1>
-    </div> <br><br><br>
-
-    <div class="contact-grid">
-        <div>
-            <br>
-            <h2>Get in Touch</h2>
-            <p><strong>Office Hours</strong></p>
-            <p>8:00 AM - 5:00 PM</p>
-            <p>Monday - Friday</p>
-
-            <p><strong>Address</strong></p>
-            <p>Km 26 Sumulong Highway The Richdale Subdivision, Antipolo, Rizal</p>
-
-            <p><strong>Email Address</strong></p>
-            <p>info@innovatronix.com</p>
-
-            <p><strong>Phone Number</strong></p>
-            <p>+63 8 661 4108</p>
+    <header>
+        <div class="logo">
+            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+            <img src="assets/logo.jpg" alt="logo" width="50" height="50">
+            <h4>Innovatronix</h4>
         </div>
 
-        <div class="contact-item">
-            <h2>Send us a Message</h2>
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
-                <label for="subject">Email Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" required>Input Message Here</textarea> <br>
-                <button class="btn" type="submit" action="mailto:paulnrv04@email.com">Submit</button>
-                <button class="btn" type="reset">Reset</button>
-            </form>
+        <nav id="navMenu">
+            <a href="homepage.html">Home</a>
+            <a href="homepage.html#products">Products</a>
+            <a href="homepage.html#blogs">Blog</a>
+            <a href="homepage.html#career">Career</a>
+            <a href="#">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="section" id="contact">
+        <h1>Contact</h1> <br><br>
+
+        <div class="contact-grid">
+            <div>
+                <br>
+                <h2>Get in Touch</h2>
+                <p><strong>Office Hours</strong></p>
+                <p>8:00 AM - 5:00 PM</p>
+                <p>Monday - Friday</p>
+
+                <p><strong>Address</strong></p>
+                <p>Km 26 Sumulong Highway The Richdale Subdivision, Antipolo, Rizal</p>
+
+                <p><strong>Email Address</strong></p>
+                <p>info@innovatronix.com</p>
+
+                <p><strong>Phone Number</strong></p>
+                <p>+63 8 661 4108</p>
+            </div>
+
+            <div class="contact-item">
+                <h2>Send us a Message</h2>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+                    <label for="subject">Email Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required>Input Message Here</textarea> <br>
+                    <button class="btn" type="submit" action="mailto:paulnrv04@email.com">Submit</button>
+                    <button class="btn" type="reset">Reset</button>
+                </form>
+            </div>
+
+            <div class="contact-item">
+                <h2>Innovative Ideas</h2>
+                <p>+632 8661 4108</p> <br>
+                <h2>Mobile</h2>
+                <p>+63917 667 3864 (Globe)</p>
+                <p>+63918 271 5950 (Smart)</p>
+                <p>+632-8661-4108 / +632-8571-6530</p>
+            </div>
         </div>
 
-        <div class="contact-item">
-            <h2>Innovative Ideas</h2>
-            <p>+632 8661 4108</p> <br>
-            <h2>Mobile</h2>
-            <p>+63917 667 3864 (Globe)</p>
-            <p>+63918 271 5950 (Smart)</p>
-            <p>+632-8661-4108 / +632-8571-6530</p>
+        <div class="map-section">
+            <h2>Visit Our Office</h2>
+            <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.8456513101846!2d121.16966241480871!3d14.606825673699328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b8f84a1665d9%3A0xf56ed0f3365497e!2sInnovatronix%20Inc.!5e0!3m2!1sen!2sph!4v1765732195753!5m2!1sen!2sph"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>Connect with Me!</p>
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
-        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
-        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
-        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
-        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
-    </div>
-    <p>© 2025 Paul's Portfolio</p>
-</footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-wrap">
 
-<script src="/Project/backend/script.js"></script>
+            <div class="footer-top">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="brand-row">
+                        <img src="assets/logo.jpg" alt="innovatronix logo" width="40" height="40">
+                        <span class="brand-name">Innovatronix</span>
+                    </div>
+
+                    <p class="brand-desc">
+                        Leading Philippine manufacturer of electronic scoreboards, imaging solutions, and power
+                        electronics since 1987.
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.facebook.com/Innovatronix" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/innovatronix-inc-" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="#">Electronic Scoreboards</a>
+                    <a href="#">Tronix Imaging</a>
+                    <a href="#">Power Solutions</a>
+                    <a href="#">Personalized Gifts</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <a href="#">Sports Venues</a>
+                    <a href="#">Events</a>
+                    <a href="#">Schools &amp; Institutions</a>
+                    <a href="#">Export Solutions</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">Product Manuals</a>
+                    <a href="#">Firmware Updates</a>
+                    <a href="#">Technical Support</a>
+                    <a href="#">FAQs</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+63 (02) 8640 5888</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@innovatronix.com</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Km 26 Sumulong Highway,<br />
+                            The Richdale Subdivision,<br />
+                            Antipolo, Rizal, Philippines
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>© 2025 Innovatronix, Inc. All rights reserved. | Est. 1987</p>
+
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="backend/script.js"></script>
 
 </body>
 </html>

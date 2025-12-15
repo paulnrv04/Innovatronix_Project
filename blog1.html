@@ -22,7 +22,7 @@
     <nav id="navMenu">
         <a href="homepage.html">Home</a>
         <a href="#products">Products</a>
-        <a href="homepage.html#blog"><b>Blog</b></a>
+        <a href="homepage.html#blogs"><b>Blog</b></a>
         <a href="homepage.html#career">Career</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
@@ -36,18 +36,18 @@
 
 <!-- BLOG SECTION -->
 <section class="section" id="blog">
-    <div class="section-title">
-        <h1>Blog</h1>
-    </div> <br><br>
+    <h1>Why Surge Protectors Are Important</h1> <br><br>
 
     <section class="blog-section">
         <div class="blog-container">
         <main class="blog-main">
-            <picture>
-                <source media="(orientation: landscape)" srcset="assets/idphoto.jpg" width="300" height="300">
-                <source media="(orientation: portrait)" srcset="assets/idphoto.jpg" width="170" height="170">
-                <img src="assets/idphoto.jpg" alt="Blog Image" width="170" height="170">
-            </picture> <br>
+            <div class="blog-featured-image">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/blog1.jpg">
+                    <source media="(min-width: 768px)" srcset="assets/blog1.jpg">
+                    <img src="assets/blog1.jpg" alt="Blog Image: Why Surge Protectors Are Important">
+                </picture>
+            </div>
 
             <div class="blog-feature">
                 <div class="blog-meta">
@@ -60,7 +60,6 @@
 
             <!-- Blog Content -->
             <article class="blog-content">
-                <h2>Why Surge Protectors Are Important</h2>
                 <h4>Written by John Smith</h4>
                 
                 <div class="blog-intro">
@@ -96,7 +95,7 @@
 
             <!-- Comments Section -->
             <section class="comments-section">
-                <h3>Comments (5)</h3>
+                <h3>Comments (3)</h3>
                 
                 <div class="blog-comment">
                     <h4>Leave a Comment</h4>
@@ -132,7 +131,7 @@
 
                     <!-- Comment 3 -->
                     <div class="comment reply">
-                        <img src="assets/admin.jpg" alt="Admin" class="comment-avatar">
+                        <img src="assets/user.jpg" alt="Admin" class="comment-avatar">
                         <div class="comment-content">
                             <h4>Admin - Dec 12, 2025</h4>
                             <p>The SureScore 2 has an IP54 rating, meaning it's protected against dust and water splashes from any direction. Perfect for outdoor use!</p>
@@ -145,54 +144,35 @@
 
         <!-- Sidebar (Right Side) -->
         <aside class="blog-sidebar">
-            <div class="sidebar-widget">
-                <h4>Search</h4>
-                <div class="search-box">
-                    <input type="text" placeholder="Search articles...">
-                    <button><i class="fas fa-search"></i></button>
+                <div class="sidebar-widget">
+                    <h4>Search</h4>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search articles...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="sidebar-widget">
-                <h4>Recent Posts</h4>
-                <div class="recent-post">
-                    <div>
-                        <h5><a href="#">The Future of Wireless Sports Technology</a></h5>
-                        <span>Dec 10, 2024</span>
-                    </div>
+                <div class="sidebar-widget">
+                    <h4>Categories</h4>
+                    <ul class="categories">
+                        <li><a href="#">Product Updates <span>[12]</span></a></li>
+                        <li><a href="#">Technical Guides <span>[8]</span></a></li>
+                        <li><a href="#">Company News <span>[15]</span></a></li>
+                        <li><a href="#">Sports Technology <span>[9]</span></a></li>
+                        <li><a href="#">Maintenance Tips <span>[7]</span></a></li>
+                    </ul>
                 </div>
-                <div class="recent-post">
-                    <div>
-                        <h5><a href="#">Maintaining Your Electronic Scoreboard</a></h5>
-                        <span>Dec 5, 2024</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div>
-                        <h5><a href="#">Case Study: NCAA Tournament 2024</a></h5>
-                        <span>Nov 28, 2024</span>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div>
-                        <h5><a href="#">New Product Launch: Timer Pro 5000</a></h5>
-                        <span>Nov 20, 2024</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="sidebar-widget">
-                <h4>Categories</h4>
-                <ul class="categories">
-                    <li><a href="#">Product Updates <span>12</span></a></li>
-                    <li><a href="#">Technical Guides <span>8</span></a></li>
-                    <li><a href="#">Case Studies <span>6</span></a></li>
-                    <li><a href="#">Company News <span>15</span></a></li>
-                    <li><a href="#">Sports Technology <span>9</span></a></li>
-                    <li><a href="#">Maintenance Tips <span>7</span></a></li>
-                </ul>
-            </div> <br><br><br>
-
+                <div class="sidebar-widget">
+                    <h4>Subscribe to Newsletter</h4>
+                    <p>Stay updated with our latest articles and news</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+                <br>
+            
             <div class="sidebar-nav">
                 <div class="nav-buttons">
                     <a href="blog1.html" class="nav-btn prev-btn">
@@ -214,18 +194,104 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-    <p>Connect with Me!</p>
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/paul-nathan-vale%C3%B1a-198b051bb/"><img src="assets/linkedin.jpg" alt="LinkedIn"></a>
-        <a href="https://web.facebook.com/pnvalena/"><img src="assets/facebook.jpg" alt="Facebook"></a>
-        <a href="https://www.instagram.com/paulnrv_/"><img src="assets/instagram.jpg" alt="Instagram"></a>
-        <a href="https://github.com/paulnrv04"><img src="assets/github.jpg" alt="GitHub"></a>
-        <a href="#"><img src="assets/email.jpg" alt="Email"></a>
-        <a href="#"><img src="assets/phone.jpg" alt="Phone"></a>
-    </div>
-    <p>© 2025 Paul's Portfolio</p>
-</footer>
+<footer class="site-footer">
+        <div class="footer-wrap">
+
+            <div class="footer-top">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="brand-row">
+                        <img src="assets/logo.jpg" alt="innovatronix logo" width="40" height="40">
+                        <span class="brand-name">Innovatronix</span>
+                    </div>
+
+                    <p class="brand-desc">
+                        Leading Philippine manufacturer of electronic scoreboards, imaging solutions, and power
+                        electronics since 1987.
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.facebook.com/Innovatronix" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/innovatronix-inc-" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/innovatronix" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="product1.html">Electronic Scoreboards</a>
+                    <a href="product2.html">Power Solutions</a>
+                    <a href="product3.html">Photography Accessories</a>
+                    <a href="product4.html">Tronix Imaging</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <a href="#">Sports Venues</a>
+                    <a href="#">Events</a>
+                    <a href="#">Schools &amp; Institutions</a>
+                    <a href="#">Export Solutions</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Online Store</h4>
+                    <a href="https://innovatronixshop.com/" target="_blank">Shopify</a>
+                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0" target="_blank">Amazon</a>
+                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1" target="_blank">Lazada</a>
+                    <a href="https://shopee.ph/innovatronixinc?is_from_login=true" target="_blank">Shoppee</a>
+                    <a href="https://www.tiktok.com/@innovatronixincorporated" target="_blank">Tiktok</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+63 (02) 8640 5888</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@innovatronix.com</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Km 26 Sumulong Highway,<br />
+                            The Richdale Subdivision,<br />
+                            Antipolo, Rizal, Philippines
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>© 2025 Innovatronix, Inc. All rights reserved. | Est. 1987</p>
+
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 <script src="backend/script.js"></script>
 
