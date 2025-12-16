@@ -23,7 +23,7 @@
 
         <nav id="navMenu">
             <a href="homepage.html#products">Home</a>
-            <a href="#products">Products</a>
+            <a href="#">Products</a>
             <a href="homepage.html#blogs">Blog</a>
             <a href="homepage.html#career">Career</a>
             <a href="contact.html">Contact</a>
@@ -42,8 +42,8 @@
         <p>The only group of imaging centers that offers fast,
         quality, and affordable service concept.</p>
         <h4>Download Tronix Imaging App:</h4>
-        <a href="https://apps.apple.com/ph/app/tronix-imaging-app/id6496682586/" class="btn" target="_blank" class="btn">Apple Store</a>
-        <a href="https://play.google.com/store/apps/details?id=com.innovatronix.troniximagingcenterapp&hl=en&pli=1" class="btn" target="_blank" class="btn">Play Store</a>
+        <a href="https://apps.apple.com/ph/app/tronix-imaging-app/id6496682586/" class="btn" target="_blank">Apple Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.innovatronix.troniximagingcenterapp&hl=en&pli=1" class="btn" target="_blank">Play Store</a>
     </section>
 
     <section class="ElectronicD">
@@ -59,10 +59,9 @@
                 <img src="assets/product4.2.jpg" alt="Store Locations">
                 <h4>Store Locations</h4>
                 <p>View the nearest Tronix Imaging Branch near you.</p>
-                <button class="btn open-modal" data-product="map">View Map</button>
+                <button class="btn open-modal" data-product="map">View Locations Map</button>
             </div>
         </div>
-
 
         <div id="product-modal" class="modal">
             <div class="modal-dialog">
@@ -81,6 +80,11 @@
                         <ul></ul>
                     </div>
 
+                    <div class="modal-section section-inclusion">
+                        <h3>Inclusions</h3>
+                        <ul></ul>
+                    </div>
+
                     <div class="modal-section section-complete">
                         <h3>Complete Set</h3>
                         <ul></ul>
@@ -96,41 +100,42 @@
                         <ul></ul>
                     </div>
 
-                    <div class="modal-section section-inclusion" style="display: none;">
-                        <h3>Set Inclusion</h3>
-                        <ul></ul>
+                    <div class="modal-buttons">
+                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product Manual</button>
+                        <button class="btn modal-compatibility-btn" style="margin-top: 20px; display: none;">Compatibility List</button>
+                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations Map</button>
                     </div>
-                    <button class="btn modal-manual-btn" style="margin-top: 20px;">Product Manual</button>
+
+                    <!-- Map container -->
+                    <div class="map-container" style="display: none;"></div>
                 </div>
             </div>
         </div>
-        <script src="backend/modal.js"></script>
-
 
         <div class="tronix-grid">
 
             <div class="ElectronicD-item">
-                <img src="assets/product4.3.jpg" style="height: auto; display: center;" alt="Tronix Imaging Packages">
+                <img src="assets/product4.3.jpg" style="height: auto; display: block; margin: 0 auto;" alt="Tronix Imaging Packages">
             </div>
 
             <div class="ElectronicD-item">
-                <img src="assets/tronix.png" style="height: auto;" alt="Tronix Imaging Online">
+                <img src="assets/product4.4.jpg" style="height: auto;" alt="Tronix Imaging Online">
                 <h4 style="text-align: center;">Thank you for choosing Tronix Imaging Center to be your source of 
                     quality pictures. You can download your free soft copy ONLY at the outlet where you had your 
                     pictures taken, and within 6 months of date of purchase.</h4>
                 <p>How to Get your FREE Soft Copy
-                <br>Step 1: Connect to “tronix” network via WiFi
+                <br>Step 1: Connect to "tronix" network via WiFi
                 <br>Step 2: Log in to http://tronix or http://192.168.100.1
                 <br>Step 3: Key-in the issued passcode.
-                <br>Step 4: Click “Get it” or Press and hold the picture and then save.</p>
+                <br>Step 4: Click "Get it" or Press and hold the picture and then save.</p>
             </div>
 
             <div class="ElectronicD-item">
-                <img src="assets/product4.5.jpg" style="height: auto; display: center;" alt="Tronix Imaging Packages">
+                <img src="assets/product4.5.jpg" style="height: auto; display: block; margin: 0 auto;" alt="Tronix Imaging Packages">
             </div>
         </div>
+        <script src="backend/modal.js"></script>
     </section>
-    </div>
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -186,7 +191,7 @@
 
                 <div class="footer-links">
                     <h4>Online Store</h4>
-                    <a href="https://www.innovatronix.com/shop/">Web Shop</a>
+                    <a href="https://www.innovatronix.com/shop/">Shopify</a>
                     <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
                     <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
@@ -233,6 +238,5 @@
     </footer>
 
     <script src="backend/script.js"></script>
-
 </body>
 </html>

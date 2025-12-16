@@ -24,7 +24,7 @@
 
         <nav id="navMenu">
             <a href="homepage.html#products">Home</a>
-            <a href="#products">Products</a>
+            <a href="#">Products</a>
             <a href="homepage.html#blogs">Blog</a>
             <a href="homepage.html#career">Career</a>
             <a href="contact.html">Contact</a>
@@ -50,14 +50,16 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.1.jpg" alt="Innovatronix CPFlash 550W">
                 <h4>Innovatronix CPFlash 550W</h4>
-                <p>Short Description</p>
+                <p>A high-powered, portable LED flash system with wireless smartphone control, compatible 
+                    with DSLR and mirrorless cameras for studio-quality lighting anywhere.</p>
                 <button class="btn open-modal" data-product="cpflash550w">View Details</button>
             </div>
 
             <div class="ElectronicD-item">
                 <img src="assets/product3.2.jpg" alt="Explorer XT3">
                 <h4>Explorer XT3</h4>
-                <p>Short Description</p>
+                <p>A powerful portable power supply for professional photographers, capable of running 
+                    multiple studio flashes with fast recycling times and high energy output.</p>
                 <button class="btn open-modal" data-product="explorerxt3">View Details</button>
             </div>
         </div>
@@ -67,14 +69,16 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.3.jpg" alt="Explorer XT SE">
                 <h4>Explorer XT SE</h4>
-                <p>Short Description</p>
+                <p>A versatile power supply designed to reliably operate bi-voltage monolight units, 
+                    providing extended shooting sessions with consistent flash performance.</p>
                 <button class="btn open-modal" data-product="explorerxtse">View Details</button>
             </div>
 
             <div class="ElectronicD-item">
                 <img src="assets/product3.4.jpg" alt="Explorer Mini">
                 <h4>Explorer Mini</h4>
-                <p>Short Description</p>
+                <p>A compact yet powerful portable power source for photographers, supporting up to 
+                    two flash units with quick recycling for on-location shoots.</p>
                 <button class="btn open-modal" data-product="explorermini">View Details</button>
             </div>
         </div>
@@ -84,14 +88,16 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.5.jpg" alt="SpeedFire">
                 <h4>SpeedFire</h4>
-                <p>Short Description</p>
+                <p>An AC-powered external supply for speedlights that drastically reduces recycling 
+                    time and delivers unlimited flashes for studio or fixed setup photography.</p>
                 <button class="btn open-modal" data-product="speedfire">View Details</button>
             </div>
 
             <div class="ElectronicD-item">
                 <img src="assets/product3.6.jpg" alt="SpeedFire II">
                 <h4>SpeedFire II</h4>
-                <p>Short Description</p>
+                <p>An upgraded external power system for Canon speedlights featuring a dummy battery 
+                    for cable-free operation and near-instantaneous flash recycling.</p>
                 <button class="btn open-modal" data-product="speedfireii">View Details</button>
             </div>
         </div>
@@ -101,7 +107,8 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.7.jpg" alt="Evo 3">
                 <h4>Evo 3</h4>
-                <p>Short Description</p>
+                <p>A professional digital photo printing machine with continuous ink system for 
+                    cost-effective production of wallet-size to A4 prints, ideal for photo businesses.</p>
                 <button class="btn open-modal" data-product="evo3">View Details</button>
             </div>
 
@@ -125,6 +132,11 @@
                         <ul></ul>
                     </div>
 
+                    <div class="modal-section section-inclusion">
+                        <h3>Inclusions</h3>
+                        <ul></ul>
+                    </div>
+
                     <div class="modal-section section-complete">
                         <h3>Complete Set</h3>
                         <ul></ul>
@@ -140,31 +152,19 @@
                         <ul></ul>
                     </div>
 
-                    <div class="modal-section section-inclusion" style="display: none;">
-                        <h3>Set Inclusion</h3>
-                        <ul></ul>
+                    <div class="modal-buttons">
+                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product Manual</button>
+                        <button class="btn modal-compatibility-btn" style="margin-top: 20px; display: none;">Compatibility List</button>
+                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations Map</button>
                     </div>
-                    <button class="btn modal-manual-btn" style="margin-top: 20px;">Product Manual</button>
-                    <button class="btn modal-compatibility-btn" style="margin-top: 10px;">Compatibility List</button>
+
+                    <!-- Map container -->
+                    <div class="map-container" style="display: none;"></div>
                 </div>
             </div>
         </div>
         <script src="backend/modal.js"></script>
     </section>
-
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h2>For order, you may reach us through:</h2>
-            <li>Km 26 Sumulong Highway, The Richdale Subdivision, Antipolo City, Rizal</li>
-            <li>+63917-667-3864 / +63918-271-5950</li>
-            <li>+632-8661-4108 / +632-8571-6530</li>
-            <li>marketing@innovatronix.com</li> <br>
-
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">Product
-                Manual</button><br><br>
-        </div>
-    </section>
-    </div>
 
     <!-- FOOTER -->
     <footer class="site-footer">
@@ -220,7 +220,7 @@
 
                 <div class="footer-links">
                     <h4>Online Store</h4>
-                    <a href="https://www.innovatronix.com/shop/">Web Shop</a>
+                    <a href="https://www.innovatronix.com/shop/">Shopify</a>
                     <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
                     <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
@@ -267,6 +267,5 @@
     </footer>
 
     <script src="backend/script.js"></script>
-
 </body>
 </html>

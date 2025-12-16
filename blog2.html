@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatronix, Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+        <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+        <img src="assets/logo.jpg" alt="logo" width="40" height="40">
+        <h4>Innovatronix</h4>
+    </div>
+
+    <nav id="navMenu">
+        <a href="homepage.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="homepage.html#blogs"><b>Blog</b></a>
+        <a href="homepage.html#career">Career</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+
+<!-- BLOG SECTION -->
+<section class="section" id="blog">
+    <section class="blog-section">
+        <h1 style="text-align: center;">Tronix QuickServ</h1>
+        <div class="blog-container">
+        <main class="blog-main">
+            <div class="blog-featured-image">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="assets/blog2.jpg">
+                    <source media="(min-width: 768px)" srcset="assets/blog2.jpg">
+                    <img src="assets/blog2.jpg" alt="Blog Image: Tronix QuickServ">
+                </picture>
+            </div>
+
+            <div class="blog-feature">
+                <div class="blog-meta">
+                    <span><i class="fas fa-calendar"></i> March 15, 2021</span>
+                    <span><i class="fas fa-user"></i> Admin</span>
+                    <span><i class="fas fa-folder"></i> Company News</span>
+                    <span><i class="fas fa-eye"></i> 8,493 Views</span>
+                </div>
+            </div>
+
+            <!-- Blog Content -->
+            <article class="blog-content">
+                <h4>Written by John Smith</h4>
+                
+                <div class="blog-intro">
+                    <p>LESS CUSTOMER WAITING TIME, MORE CUSTOMERS COMING IN!</p>
+                </div>
+
+
+                <div class="blog-section">
+                    <p>A smart solution for customer queue management to help you organize and systematize 
+                        customer flow and transactions.</p>
+
+                    <video width="640" height="640" controls>
+                        <source src="assets/QuickServ.mp4" type="video/mp4">
+                        
+                        <!-- Fallback text for browsers that do not support the video tag -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </article>
+
+            <!-- Comments Section -->
+            <section class="comments-section">
+                <h3>No Comments Yet (0)</h3>
+                
+                <div class="blog-comment">
+                    <h4>Leave a Comment</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <textarea placeholder="Your Comment" rows="5" required></textarea> <br>
+                        <button class="btn" type="submit">Post Comment</button>
+                    </form> <br>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar (Right Side) -->
+        <aside class="blog-sidebar">
+                <div class="sidebar-widget">
+                    <h4>Search</h4>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search articles...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h4>Categories</h4>
+                    <ul class="categories">
+                        <li><a href="#">Product Updates <span>[12]</span></a></li>
+                        <li><a href="#">Technical Guides <span>[8]</span></a></li>
+                        <li><a href="#">Company News <span>[15]</span></a></li>
+                        <li><a href="#">Sports Technology <span>[9]</span></a></li>
+                        <li><a href="#">Maintenance Tips <span>[7]</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h4>Subscribe to Newsletter</h4>
+                    <p>Stay updated with our latest articles and news</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+                <br>
+            
+            <div class="sidebar-nav">
+                <div class="nav-buttons">
+                    <a href="blog1.html" class="nav-btn prev-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Prev</span>
+                    </a>
+                    
+                    <a href="blog2.html" class="nav-btn next-btn">
+                        <span>Next</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    </section> <br>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+        <div class="footer-wrap">
+
+            <div class="footer-top">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="brand-row">
+                        <img src="assets/logo.jpg" alt="innovatronix logo" width="40" height="40">
+                        <span class="brand-name">Innovatronix</span>
+                    </div>
+
+                    <p class="brand-desc">
+                        Leading Philippine manufacturer of electronic scoreboards, imaging solutions, and power
+                        electronics since 1987.
+                    </p>
+
+                    <div class="socials">
+                        <a href="https://www.facebook.com/Innovatronix" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/innovatronix-inc-" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/innovatronix" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <a href="product1.html">Electronic Scoreboards</a>
+                    <a href="product2.html">Power Solutions</a>
+                    <a href="product3.html">Photography Accessories</a>
+                    <a href="product4.html">Tronix Imaging</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <a href="#">Sports Venues</a>
+                    <a href="#">Events</a>
+                    <a href="#">Schools &amp; Institutions</a>
+                    <a href="#">Export Solutions</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Online Store</h4>
+                    <a href="https://innovatronixshop.com/" target="_blank">Shopify</a>
+                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0" target="_blank">Amazon</a>
+                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1" target="_blank">Lazada</a>
+                    <a href="https://shopee.ph/innovatronixinc?is_from_login=true" target="_blank">Shoppee</a>
+                    <a href="https://www.tiktok.com/@innovatronixincorporated" target="_blank">Tiktok</a>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+63 (02) 8640 5888</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@innovatronix.com</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Km 26 Sumulong Highway,<br />
+                            The Richdale Subdivision,<br />
+                            Antipolo, Rizal, Philippines
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>© 2025 Innovatronix, Inc. All rights reserved. | Est. 1987</p>
+
+                <div class="bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="backend/script.js"></script>
+
+</body>
+</html>

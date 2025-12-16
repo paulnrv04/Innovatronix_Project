@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
             manual: "assets/manuals/refclocksaver-manual.pdf",
 
             features: [
-                "The guaranteed savings is based on the preferred time setting and saving mode. This device can cut the refrigerator’s power consumption to almost half than the usual month use. This device is equipped with a power-on-delay feature.",
+                "The guaranteed savings is based on the preferred time setting and saving mode. This device can cut the refrigerator's power consumption to almost half than the usual month use. This device is equipped with a power-on-delay feature.",
             ]
         },
 
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
             compatibility: "assets/compatibility/explorer-compatibility.pdf",
 
             features: [
-                "The Tronix Explorer XT3. (The most powerful Tronix Explorer yet!) Works with multiple digital and bi-voltage monolights/flash units (and analog flash units as well). and capable of powering compacts/monoblocks giving several hundreds of pops at faster recycling time, as fast as that of a wall socket’s recycling time. Rated at 800watts continuous, up to 2400w/s."
+                "The Tronix Explorer XT3. (The most powerful Tronix Explorer yet!) Works with multiple digital and bi-voltage monolights/flash units (and analog flash units as well). and capable of powering compacts/monoblocks giving several hundreds of pops at faster recycling time, as fast as that of a wall socket's recycling time. Rated at 800watts continuous, up to 2400w/s."
             ]
         },
 
@@ -290,7 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
         speedfire: {
             title: "SpeedFire",
             image: "assets/product3.5.jpg",
-            desc: "The Tronix SpeedFire is an external power supply for small flashes which connects directly to AC/wall socket. It is designed for small shoe-mounted flash units or flash guns. It converts AC power to high voltage DC power that connects to the flash gun’s external power port.",
+            desc: "The Tronix SpeedFire is an external power supply for small flashes which connects directly to AC/wall socket. It is designed for small shoe-mounted flash units or flash guns. It converts AC power to high voltage DC power that connects to the flash gun's external power port.",
             manual: "assets/manuals/speedfire-manual.pdf",
 
             features: [
@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
             manual: "assets/manuals/speedfireii-manual.pdf",
 
             features: [
-                "Tronix SpeedFire II is an external power supply which connects directly to AC/wall socket, designed for small shoe-mounted flash units or flash guns. It converts AC power to high voltage DC power that connects to the flash gun’s external power port. It effectively reduces recycling time and provides unlimited number of flashes.",
+                "Tronix SpeedFire II is an external power supply which connects directly to AC/wall socket, designed for small shoe-mounted flash units or flash guns. It converts AC power to high voltage DC power that connects to the flash gun's external power port. It effectively reduces recycling time and provides unlimited number of flashes.",
                 "Best recommended for home/studio or semi-permanent studio set up. (For Canon 580EX2/580EX/550EX/540EX/430EZ)"
             ]
         },
@@ -314,9 +314,14 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Evo 3",
             image: "assets/product3.7.jpg",
             desc: "The Tronix EVO3 is a digital photo printing machine, equipped with Continuous Ink System for easy ink refilling and cheaper material cost. Print pictures into wallet sizes, 2R, 3R, 4R and A4 and sell them at a price relatively cheaper compared to existing printers in the market today. Earn as much as 60% with only P1.20+ material cost per print. This is the machine used by Tronix Imaging Centers nationwide.",
-        }
-    };
+        },
 
+        map: {
+            title: "Tronix Imaging Locations",
+            desc: "Find Tronix Imaging Centers near you",
+            mapEmbed: "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61772.090402504866!2d121.01285189990519!3d14.612990838092722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stronix%20imaging%20locations!5e0!3m2!1sen!2sph!4v1765814156210!5m2!1sen!2sph"
+        },
+    };
 
     const modal = document.getElementById("product-modal");
     const modalImg = modal.querySelector(".modal-img");
@@ -329,6 +334,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const sectionTechnical = modal.querySelector(".section-technical");
     const manualBtn = modal.querySelector(".modal-manual-btn");
     const compatibilityBtn = modal.querySelector(".modal-compatibility-btn");
+    const mapBtn = modal.querySelector(".modal-map-btn");
+
+    // Get or create map container
+    let mapContainer = modal.querySelector(".map-container");
+    if (!mapContainer) {
+        mapContainer = document.createElement("div");
+        mapContainer.className = "map-container";
+        modal.querySelector(".modal-right").appendChild(mapContainer);
+    }
 
     document.querySelectorAll(".open-modal").forEach(btn => {
         btn.addEventListener("click", () => {
@@ -336,39 +350,130 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = PRODUCTS[key];
             if (!data) return;
 
-            modalImg.src = data.image || "";
-            modalImg.alt = data.title || "";
+            // Reset modal state first
+            sectionFeatures.style.display = "block";
+            sectionInclusion && (sectionInclusion.style.display = "block");
+            sectionComplete && (sectionComplete.style.display = "block");
+            sectionStandard && (sectionStandard.style.display = "block");
+            sectionTechnical && (sectionTechnical.style.display = "block");
+            mapContainer.style.display = "none";
+            mapBtn.style.display = "none";
+            manualBtn.style.display = "none";
+            compatibilityBtn && (compatibilityBtn.style.display = "none");
+
+            // Only show image for products that have one
+            if (data.image) {
+                modalImg.src = data.image;
+                modalImg.alt = data.title;
+                modalImg.style.display = "block";
+            } else {
+                modalImg.style.display = "none";
+            }
+            
             modalTitle.textContent = data.title || "";
             modalDesc.textContent = data.desc || "";
 
+            // Fill all sections using the fillListSection function
             fillListSection(sectionFeatures, data.features);
             fillListSection(sectionInclusion, data.inclusion);
             fillListSection(sectionComplete, data.completeSet);
             fillListSection(sectionStandard, data.standardSet);
             fillListSection(sectionTechnical, data.technicalSpecs);
 
+            // For MAP product: Show map immediately
+            if (key === "map" && data.mapEmbed) {
+                // Hide image and all sections for map
+                modalImg.style.display = "none";
+                sectionFeatures.style.display = "none";
+                sectionInclusion && (sectionInclusion.style.display = "none");
+                sectionComplete && (sectionComplete.style.display = "none");
+                sectionStandard && (sectionStandard.style.display = "none");
+                sectionTechnical && (sectionTechnical.style.display = "none");
+                manualBtn.style.display = "none";
+                compatibilityBtn && (compatibilityBtn.style.display = "none");
+                
+                // Hide the left side (image container) completely
+                modal.querySelector(".modal-left").style.display = "none";
+                
+                // Make the right side take full width
+                modal.querySelector(".modal-right").style.width = "100%";
+                modal.querySelector(".modal-right").style.flex = "1 0 100%";
+
+                // Show map directly
+                mapContainer.innerHTML = `
+                    <iframe 
+                        src="${data.mapEmbed}" 
+                        width="100%" 
+                        height="500" 
+                        style="border:0; border-radius: 8px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                `;
+                mapContainer.style.display = "block";
+                mapContainer.style.height = "100%";
+                mapContainer.style.marginTop = "0";
+            } 
+            // For other products: Show product details
+            else {
+                // Show product image
+                if (data.image) {
+                    modalImg.src = data.image;
+                    modalImg.alt = data.title;
+                    modalImg.style.display = "block";
+                }
+                
+                // Handle manual button for products
+                if (data.manual) {
+                    manualBtn.style.display = "inline-block";
+                    manualBtn.onclick = () => window.open(data.manual, "_blank");
+                } else {
+                    manualBtn.style.display = "none";
+                }
+
+                // Handle compatibility button
+                if (compatibilityBtn && data.compatibility) {
+                    compatibilityBtn.style.display = "inline-block";
+                    compatibilityBtn.onclick = () => window.open(data.compatibility, "_blank");
+                } else if (compatibilityBtn) {
+                    compatibilityBtn.style.display = "none";
+                }
+            }
+
             modal.classList.add("show");
-
-            if (data.manual) {
-                manualBtn.style.display = "inline-block";
-                manualBtn.onclick = () => window.open(data.manual, "_blank");
-            } else {
-                manualBtn.style.display = "none"; // hide if no manual
-            }
-
-            if (data.compatibility) {
-                compatibilityBtn.style.display = "inline-block";
-                compatibilityBtn.onclick = () => window.open(data.compatibility, "_blank");
-            } else {
-                compatibilityBtn.style.display = "none";
-            }
         });
     });
 
     const closeBtn = modal.querySelector(".modal-close");
-    closeBtn.addEventListener("click", () => modal.classList.remove("show"));
+    closeBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+        // Reset for next opening
+        sectionFeatures.style.display = "block";
+        sectionInclusion && (sectionInclusion.style.display = "block");
+        sectionComplete && (sectionComplete.style.display = "block");
+        sectionStandard && (sectionStandard.style.display = "block");
+        sectionTechnical && (sectionTechnical.style.display = "block");
+        mapContainer.style.display = "none";
+        mapContainer.innerHTML = "";
+        modalImg.style.display = "block";
+        modalImg.src = "";
+    });
+    
     modal.addEventListener("click", e => {
-        if (e.target === modal) modal.classList.remove("show");
+        if (e.target === modal) {
+            modal.classList.remove("show");
+            // Reset for next opening
+            sectionFeatures.style.display = "block";
+            sectionInclusion && (sectionInclusion.style.display = "block");
+            sectionComplete && (sectionComplete.style.display = "block");
+            sectionStandard && (sectionStandard.style.display = "block");
+            sectionTechnical && (sectionTechnical.style.display = "block");
+            mapContainer.style.display = "none";
+            mapContainer.innerHTML = "";
+            modalImg.style.display = "block";
+            modalImg.src = "";
+        }
     });
 });
 
