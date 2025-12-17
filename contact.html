@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovatronix, Inc.</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -37,68 +37,136 @@
     </header>
 
     <!-- CONTACT SECTION -->
-    <section class="section" id="contact">
-        <h1>Contact</h1> <br><br>
+    <section class="contact-section" id="contact">
+        <h1>Contact</h1><br>
 
-        <div class="contact-grid">
-            <div>
-                <br>
-                <h2>Get in Touch</h2>
-                <p><strong>Office Hours</strong></p>
-                <p>8:00 AM - 5:00 PM</p>
-                <p>Monday - Friday</p>
+        <div class="contact-wrapper">
 
-                <p><strong>Address</strong></p>
-                <p>Km 26 Sumulong Highway The Richdale Subdivision, Antipolo, Rizal</p>
-
-                <p><strong>Email Address</strong></p>
-                <p>info@innovatronix.com</p>
-
-                <p><strong>Phone Number</strong></p>
-                <p>+63 8 661 4108</p>
-            </div>
-
-            <div class="contact-item">
+            <!-- LEFT: MESSAGE FORM -->
+            <div class="contact-card">
                 <h2>Send us a Message</h2>
-                <form>
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
-                    <label for="subject">Email Subject:</label>
-                    <input type="text" id="subject" name="subject" placeholder="Enter Subject" required>
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" required>Input Message Here</textarea> <br>
-                    <button class="btn" type="submit" action="mailto:paulnrv04@email.com">Submit</button>
-                    <button class="btn" type="reset">Reset</button>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="sample@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
 
-            <div class="contact-item">
-                <h2>Innovative Ideas</h2>
-                <p>+632 8661 4108</p> <br>
-                <h2>Mobile</h2>
-                <p>+63917 667 3864 (Globe)</p>
-                <p>+63918 271 5950 (Smart)</p>
-                <p>+632-8661-4108 / +632-8571-6530</p>
-            </div>
-        </div>
+            <!-- RIGHT: CONTACT INFO -->
+            <div class="contact-card info-card">
+                <h2>Get in Touch</h2>
 
-        <div class="map-section">
-            <h2>Visit Our Office</h2>
-            <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.8456513101846!2d121.16966241480871!3d14.606825673699328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b8f84a1665d9%3A0xf56ed0f3365497e!2sInnovatronix%20Inc.!5e0!3m2!1sen!2sph!4v1765732195753!5m2!1sen!2sph"
-                width="100%" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                <div class="info-block">
+                    <h4>Office Hours</h4>
+                    <p>Monday – Friday</p>
+                    <p>8:00 AM – 5:00 PM</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Address</h4>
+                    <p>
+                        Km 26 Sumulong Highway<br>
+                        The Richdale Subdivision<br>
+                        Antipolo, Rizal
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Email</h4>
+                    <p>info@innovatronix.com</p>
+                </div>
+
+                <div class="info-block">
+                    <h4>Phone</h4>
+                    <p>+63 8 661 4108</p>
+                    <p>+63 917 667 3864 (Globe)</p>
+                    <p>+63 918 271 5950 (Smart)</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
+
+    <section class="visit">
+        <h2 class="visit-title">Visit Our Locations</h2><br>
+
+        <div class="visit-card">
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.8456513101846!2d121.16966241480871!3d14.606825673699328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b8f84a1665d9%3A0xf56ed0f3365497e!2sInnovatronix%20Inc.!5e0!3m2!1sen!2sph!4v1765732195753!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Innovatronix Location Map">
+                </iframe>
+            </div>
+
+            <div class="visit-info">
+                <h3>Visit Our Facility</h3>
+                <p>
+                    Visit our manufacturing facility and showroom in Antipolo to see product demonstrations
+                    and discuss custom requirements with our engineering team.
+                </p>
+
+                <div class="place">
+                    <div class="place-icon">HQ</div>
+                    <div class="place-text">
+                        <h4>Antipolo Headquarters</h4>
+                        <p>Km 26 Sumulong Highway, The Richdale Subdivision, Antipolo, Rizal</p>
+                        <p>Mon–Fri 8:00–17:00</p>
+                    </div>
+                </div>
+
+                <div class="place">
+                    <div class="place-icon">T</div>
+                    <div class="place-text">
+                        <h4>Tronix Imaging Centers</h4>
+                        <p>Multiple retail &amp; photo studio locations across Metro Manila</p><br>
+                    </div>
+                </div>
+
+                <button id="openVisitModal" class="btn btn-primary">Schedule Visit</button>
+
+            </div>
+
+        </div>
+    </section>
+    <div id="scheduleVisitModal" class="modal">
+        <div class="modal-dialog">
+            <button id="closeVisitModal" class="modal-close" type="button">&times;</button>
+            <!-- OPTIONAL LEFT SIDE (can be removed if you want) -->
+            <div class="modal-left">
+                <img src="assets/building.jpeg" alt="innovatronix building">
+            </div> <!-- RIGHT SIDE -->
+            <div class="modal-right">
+                <h2 class="modal-title">Schedule a Visit</h2>
+                <p class="modal-desc"> Fill out the form below and our team will confirm your visit. </p>
+                <form class="visit-form">
+                    <div class="form-group"> <label>Full Name</label> <input type="text" required> </div>
+                    <div class="form-group"> <label>Email</label> <input type="email" required> </div>
+                    <div class="form-group"> <label>Preferred Date</label> <input type="date" required> </div>
+                    <div class="form-group"> <label>Preferred Time</label> <input type="time" required> </div>
+                    <div class="form-group"> <label>Purpose of Visit</label> <textarea rows="3"></textarea> </div>
+                    <button type="submit" class="btn"> Submit Request </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>src="backend/script.js"</script>
+    <script src="backend/modal.js"></script>
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-wrap">
@@ -154,8 +222,10 @@
                 <div class="footer-links">
                     <h4>Online Store</h4>
                     <a href="https://www.innovatronix.com/shop/">Shopify</a>
-                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
-                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
+                    <a
+                        href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
+                    <a
+                        href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
                     <a href="https://www.tiktok.com/@innovatronixincorporated">Tiktok</a>
                 </div>
@@ -199,6 +269,6 @@
         </div>
     </footer>
 
-    <script src="backend/script.js"></script>
 </body>
+
 </html>

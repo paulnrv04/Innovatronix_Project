@@ -45,7 +45,8 @@
     =========================== */
 
     header {
-        position: fixed;
+        position: relative;
+        z-index: 1000;
         top: 0;
         left: 0;
         right: 0;
@@ -61,6 +62,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
         z-index: 1000;
+
     }
 
     .logo {
@@ -99,6 +101,7 @@
         font-size: 32px;
         cursor: pointer;
         color: #000;
+        z-index: 1100;
     }
 
     /* When mobile menu is open */
@@ -139,7 +142,7 @@
         border-radius: 20px;
         box-shadow: 0 2px 6px rgba(56, 48, 48, 0.9);
         filter: grayscale(20%);
-        transition: 0.3s ease;  
+        transition: 0.3s ease;
     }
 
     picture img:hover {
@@ -187,7 +190,7 @@
     .section {
         margin-top: 0;
         padding: 60px;
-        border-bottom: 1px solid #666666;
+        border-bottom: 1px solid #e2e2e2;
     }
 
     /* ===========================
@@ -196,11 +199,11 @@
 
     .carousel {
         position: relative;
-        width: 500px;
-        height: 350px;
-        margin: auto;
+        width: 100%;
+        height: auto;
         overflow: hidden;
         border-radius: 20px;
+
     }
 
     .carousel-track {
@@ -209,9 +212,12 @@
     }
 
     .carousel-item {
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
+
 
     /* Carousel buttons */
     .carousel-btn {
@@ -325,7 +331,7 @@
     }
 
     .blog-box p {
-        font-size:small;
+        font-size: small;
     }
 
     #products {
@@ -516,7 +522,7 @@
         padding: 60px 120px 60px 120px;
         background-color: rgb(234, 239, 239);
     }
-    
+
     /* ===========================
     9. Blog Main Content
     =========================== */
@@ -598,7 +604,7 @@
         display: flex;
         gap: 5px;
         padding: 15px 0;
-        border-bottom: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e2e2;
     }
 
     .comment.reply {
@@ -727,8 +733,8 @@
         width: 100%;
         max-width: 100%;
         margin-right: 10px;
-    }  
-    
+    }
+
     /* ===========================
     9.1 Trending Blog Box
     =========================== */
@@ -744,7 +750,7 @@
         position: relative;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
-        
+
     .trending::before {
         content: "";
         position: absolute;
@@ -752,13 +758,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, 
-            rgba(10, 38, 71, 0.9) 0%, 
-            rgba(30, 60, 114, 0.85) 50%, 
-            rgba(42, 82, 152, 0.2) 100%);
+        background: linear-gradient(135deg,
+                rgba(10, 38, 71, 0.9) 0%,
+                rgba(30, 60, 114, 0.85) 50%,
+                rgba(42, 82, 152, 0.2) 100%);
         z-index: 1;
     }
-        
+
     .trending-container {
         position: relative;
         z-index: 2;
@@ -870,39 +876,165 @@
     }
 
     /* ===========================
-    12. Contact
+    12. ContactCSS
     =========================== */
 
-    .contact-grid {
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 100px 20px 80px;
+        border-bottom: 1px solid #e2e2e2;
+        background-color: rgba(246, 248, 251, 1);
+    }
+
+    .contact-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 30px;
+    }
+
+    /* CARD STYLE */
+    .contact-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
         text-align: left;
     }
 
-    .contact-item,
-    .blog-comment {
-        padding: 25px;
-        background: rgb(234, 239, 239);
-        border-radius: 20px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        transition: 0.3s ease;
+    .contact-card h2 {
+        margin-bottom: 20px;
     }
 
-    .map-section {
-        margin: 40px 0;
+    /* FORM */
+    .contact-form .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
     }
 
-    .map-container {
-        border-radius: 10px; 
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid #d1d5db;
+        font-family: inherit;
+    }
+
+    .contact-form textarea {
+        min-height: 130px;
+        resize: vertical;
+    }
+
+    /* INFO SIDE */
+    .info-card .info-block {
+        margin-bottom: 18px;
+    }
+
+    .info-card h4 {
+        margin-bottom: 6px;
+    }
+
+    .info-card p {
+        margin: 2px 0;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:900px) {
+        .contact-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+    /* Sched Visit */
+    .visit {
+        padding: 60px 20px;
+    }
+
+    /* Grid layout */
+    .visit-card {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 50px;
+        align-items: stretch;
+    }
+
+    /* Map container */
+    .map-box {
+        border-radius: 18px;
         overflow: hidden;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        min-height: 520px;
     }
 
-    .map-container iframe {
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* Make iframe fill container */
+    .map-box iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
     }
+
+    /* Right side content */
+    .visit-info {
+        padding-right: 30px;
+        text-align: justify;
+    }
+
+    /* Place item */
+    .place {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .place-icon {
+        margin-top: 13px;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: #e2e8f0;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        display: grid;
+        place-items: center;
+        color: rgb(46, 31, 159);
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+    }
+
+    .place-text h4 {
+        margin-bottom: 6px;
+    }
+
+    .place-text p {
+        margin: 2px 0;
+    }
+
+    .modal-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        /* fill area nicely, crop if needed */
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .visit-card {
+            grid-template-columns: 1fr;
+        }
+
+        .map-box {
+            min-height: 320px;
+        }
+    }
+
+
 
     /* ===========================
     13. MV (Mission/Vision) hero
@@ -940,7 +1072,7 @@
         border: #2e1f9f .5px solid;
         box-shadow: 0 4px 10px rgb(46, 31, 159, 0.5);
     }
-    
+
     /* ===========================
     14. Timeline
     =========================== */
@@ -957,7 +1089,8 @@
         font-weight: 700;
         min-width: 80px;
         text-align: right;
-        color: #f4ac31;;
+        color: #f4ac31;
+        ;
         text-shadow: #e2e2e2 1px 1px 2px;
     }
 
@@ -1213,11 +1346,12 @@
 
     /* <= 1300px */
     @media (max-width: 1300px) {
+
         .product-item,
         .blog-item {
             height: 480px;
         }
-    
+
         .mv {
             flex-direction: column;
             text-align: center;
@@ -1317,7 +1451,8 @@
             grid-column: span 2;
         }
 
-        .brand-row, .socials {
+        .brand-row,
+        .socials {
             justify-content: center;
             text-align: center;
         }
@@ -1332,7 +1467,7 @@
         }
 
         .ElectronicD-grid {
-            padding: 20px 0 0 0 ;
+            padding: 20px 0 0 0;
         }
 
         .tronix-grid {
@@ -1344,8 +1479,8 @@
     @media (max-width: 800px) {
         .hero-text h1 {
             font-size: 28px;
-        }   
-        
+        }
+
         .hero-text p {
             font-size: 14px;
         }
@@ -1398,69 +1533,69 @@
     }
 
     .modal-dialog {
-    max-width: 1000px;
-    display: flex;
-    max-height: 90vh;
-}
-
-.modal-left {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-right {
-    flex: 1;
-    padding: 30px;
-    overflow-y: auto;
-}
-
-.store-list {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.store-item {
-    padding: 10px;
-    margin: 8px 0;
-    background: white;
-    border-left: 4px solid #0066cc;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 4px;
-}
-
-.store-item:hover {
-    background: #e3f2fd;
-    transform: translateX(5px);
-}
-
-.store-item strong {
-    color: #0066cc;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#store-map {
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-@media (max-width: 768px) {
-    .modal-dialog {
-        flex-direction: column;
-        max-height: 95vh;
+        max-width: 1000px;
+        display: flex;
+        max-height: 90vh;
     }
-    
-    .modal-left, .modal-right {
-        width: 100%;
+
+    .modal-left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
+
+    .modal-right {
+        flex: 1;
+        padding: 30px;
+        overflow-y: auto;
+    }
+
+    .store-list {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .store-item {
+        padding: 10px;
+        margin: 8px 0;
+        background: white;
+        border-left: 4px solid #0066cc;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 4px;
+    }
+
+    .store-item:hover {
+        background: #e3f2fd;
+        transform: translateX(5px);
+    }
+
+    .store-item strong {
+        color: #0066cc;
+        display: block;
+        margin-bottom: 5px;
+    }
+
     #store-map {
-        height: 300px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-}
+
+    @media (max-width: 768px) {
+        .modal-dialog {
+            flex-direction: column;
+            max-height: 95vh;
+        }
+
+        .modal-left,
+        .modal-right {
+            width: 100%;
+        }
+
+        #store-map {
+            height: 300px;
+        }
+    }
