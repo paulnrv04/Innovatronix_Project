@@ -7,6 +7,7 @@
     <title>Innovatronix, Inc.</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -14,12 +15,14 @@
 <body>
 
     <header>
-        <div class="logo">
-            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-            <h4>Innovatronix</h4>
-        </div>
+        <a href="homepage.html">
+            <div class="logo">
+                <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+                <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+                <img src="assets/logo.jpg" alt="logo" width="50" height="50">
+                <h4>Innovatronix</h4>
+            </div>
+        </a>
 
         <nav id="navMenu">
             <a href="homepage.html#products">Home</a>
@@ -40,7 +43,7 @@
     <section class="section" id="products"> <br>
         <h1>Energy Savers & Appliance Protectors</h1>
         <p>These products are designed for easy use, coupled with significant functions that could spell
-        big savings</p>
+            big savings</p>
     </section>
 
     <section class="ElectronicD">
@@ -49,7 +52,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.1.jpg" alt="Zeal 2.0 (12Vdc Mini UPS)">
                 <h4>Zeal 2.0 (12Vdc Mini UPS)</h4>
-                <p>A compact uninterruptible power supply designed to keep your router or modem running 
+                <p>A compact uninterruptible power supply designed to keep your router or modem running
                     for up to 4 hours during power outages, ensuring continuous internet connectivity.</p>
                 <button class="btn open-modal" data-product="zeal2">View Details</button>
             </div>
@@ -57,7 +60,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.2.jpg" alt="Apliance Timer">
                 <h4>Appliance Timer</h4>
-                <p>An energy-saving device that automatically turns off appliances to prevent power surge 
+                <p>An energy-saving device that automatically turns off appliances to prevent power surge
                     damage, reduce electricity costs, and enhance home safety.</p>
                 <button class="btn open-modal" data-product="appliancetimer">View Details</button>
             </div>
@@ -68,7 +71,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.3.jpg" alt="Ref Clock Saver">
                 <h4>Ref Clock Saver</h4>
-                <p>An electronic controller that optimizes refrigerator operation cycles to cut power 
+                <p>An electronic controller that optimizes refrigerator operation cycles to cut power
                     consumption by nearly half while maintaining consistent cooling performance.</p>
                 <button class="btn open-modal" data-product="refclocksaver">View Details</button>
             </div>
@@ -77,7 +80,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.4.jpg" alt="Aircon Timer">
                 <h4>Aircon Timer</h4>
-                <p>An energy-saving timer for window-type air conditioners (up to 3HP) with programmable 
+                <p>An energy-saving timer for window-type air conditioners (up to 3HP) with programmable
                     on/off settings and a built-in fan outlet for added comfort.</p>
                 <button class="btn open-modal" data-product="aircontimer">View Details</button>
             </div>
@@ -88,7 +91,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.5.jpg" alt="Automatic Night Light">
                 <h4>Automatic Night Light</h4>
-                <p>A sensor-based lighting controller that automatically turns lights on at dusk and 
+                <p>A sensor-based lighting controller that automatically turns lights on at dusk and
                     off at dawn, compatible with CFL and LED bulbs up to 80 watts.</p>
                 <button class="btn open-modal" data-product="nightlight">View Details</button>
             </div>
@@ -97,8 +100,8 @@
             <div class="ElectronicD-item">
                 <img src="assets/product2.6.jpg" alt="Power on Delay">
                 <h4>Power on Delay</h4>
-                <p>A protection device that delays power restoration to appliances after brownouts, 
-                    allowing voltage stabilization and preventing compressor damage in refrigerators, 
+                <p>A protection device that delays power restoration to appliances after brownouts,
+                    allowing voltage stabilization and preventing compressor damage in refrigerators,
                     TVs, and audio systems.</p>
                 <button class="btn open-modal" data-product="powerondelay">View Details</button>
             </div>
@@ -142,9 +145,12 @@
                     </div>
 
                     <div class="modal-buttons">
-                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product Manual</button>
-                        <button class="btn modal-compatibility-btn" style="margin-top: 20px; display: none;">Compatibility List</button>
-                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations Map</button>
+                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product
+                            Manual</button>
+                        <button class="btn modal-compatibility-btn"
+                            style="margin-top: 20px; display: none;">Compatibility List</button>
+                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations
+                            Map</button>
                     </div>
 
                     <!-- Map container -->
@@ -152,7 +158,6 @@
                 </div>
             </div>
         </div>
-        <script src="backend/modal.js"></script>
     </section>
 
     <section class="hero" id="home">
@@ -224,8 +229,10 @@
                 <div class="footer-links">
                     <h4>Online Store</h4>
                     <a href="https://www.innovatronix.com/shop/">Shopify</a>
-                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
-                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
+                    <a
+                        href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
+                    <a
+                        href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
                     <a href="https://www.tiktok.com/@innovatronixincorporated">Tiktok</a>
                 </div>
@@ -269,6 +276,8 @@
         </div>
     </footer>
 
-    <script src="backend/script.js"></script>
+    <script src="backend/hamburger.js"></script>
+    <script src="backend/productmodal.js"></script>
 </body>
+
 </html>

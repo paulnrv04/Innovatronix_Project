@@ -8,19 +8,21 @@
     <title>Innovatronix, Inc.</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
     <header>
-        <div class="logo">
-            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-            <h4>Innovatronix</h4>
-        </div>
+        <a href="homepage.html">
+            <div class="logo">
+                <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+                <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+                <img src="assets/logo.jpg" alt="logo" width="50" height="50">
+                <h4>Innovatronix</h4>
+            </div>
+        </a>
 
         <nav id="navMenu">
             <a href="homepage.html">Home</a>
@@ -59,7 +61,6 @@
             <button class="carousel-btn prev">❮</button>
             <button class="carousel-btn next">❯</button>
         </div>
-        <script src="backend/script.js"></script>
     </section>
 
     <!--Summary Information-->
@@ -141,7 +142,7 @@
                 <div class="blog-item">
                     <img src="assets/blog1.jpg" alt="Blog 1">
                     <h4>Power Line Surges: Understanding the Threats...</h4>
-                    <p>Electrical power line surges are sudden, sharp 
+                    <p>Electrical power line surges are sudden, sharp
                         increases in voltage on an electrical power line...</p> <br>
                 </div>
             </a>
@@ -273,8 +274,10 @@
                 <div class="footer-links">
                     <h4>Online Store</h4>
                     <a href="https://innovatronixshop.com/" target="_blank">Shopify</a>
-                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0" target="_blank">Amazon</a>
-                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1" target="_blank">Lazada</a>
+                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0"
+                        target="_blank">Amazon</a>
+                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1"
+                        target="_blank">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true" target="_blank">Shoppee</a>
                     <a href="https://www.tiktok.com/@innovatronixincorporated" target="_blank">Tiktok</a>
                 </div>
@@ -317,5 +320,8 @@
 
         </div>
     </footer>
+    <script src="backend/hamburger.js"></script>
+    <script src="backend/carousel.js"></script>
 </body>
+
 </html>

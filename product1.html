@@ -7,6 +7,7 @@
     <title>Innovatronix, Inc.</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -14,12 +15,14 @@
 <body>
 
     <header>
-        <div class="logo">
-            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-            <h4>Innovatronix</h4>
-        </div>
+        <a href="homepage.html">
+            <div class="logo">
+                <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+                <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+                <img src="assets/logo.jpg" alt="logo" width="50" height="50">
+                <h4>Innovatronix</h4>
+            </div>
+        </a>
 
         <nav id="navMenu">
             <a href="homepage.html#products">Home</a>
@@ -38,8 +41,8 @@
     <!-- PRODUCTS SECTION -->
     <section class="section" id="products"> <br>
         <h1>Digital Display Board & Queuing Systems</h1>
-        <p>These products are designed for easy use, coupled with significant 
-        functions that could spell big savings</p>
+        <p>These products are designed for easy use, coupled with significant
+            functions that could spell big savings</p>
     </section>
 
     <section class="ElectronicD">
@@ -144,9 +147,12 @@
                     </div>
 
                     <div class="modal-buttons">
-                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product Manual</button>
-                        <button class="btn modal-compatibility-btn" style="margin-top: 20px; display: none;">Compatibility List</button>
-                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations Map</button>
+                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product
+                            Manual</button>
+                        <button class="btn modal-compatibility-btn"
+                            style="margin-top: 20px; display: none;">Compatibility List</button>
+                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations
+                            Map</button>
                     </div>
 
                     <!-- Map container -->
@@ -154,13 +160,12 @@
                 </div>
             </div>
         </div>
-        <script src="backend/modal.js"></script>
     </section>
 
     <section class="hero" id="home">
-        
 
-            <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">
+
+        <button class="btn" onclick="document.getElementById('works').scrollIntoView({behavior:'smooth'});">
             Schedule Visit</button><br><br>
         </div>
     </section>
@@ -221,8 +226,10 @@
                 <div class="footer-links">
                     <h4>Online Store</h4>
                     <a href="https://www.innovatronix.com/shop/">Shopify</a>
-                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
-                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
+                    <a
+                        href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
+                    <a
+                        href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
                     <a href="https://www.tiktok.com/@innovatronixincorporated">Tiktok</a>
                 </div>
@@ -265,5 +272,9 @@
 
         </div>
     </footer>
+
+    <script src="backend/hamburger.js"></script>
+    <script src="backend/productmodal.js"></script>
 </body>
+
 </html>

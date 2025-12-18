@@ -1,0 +1,225 @@
+/* ===========================
+   DARK MODE OVERRIDES
+   Put this in dark.css
+   Toggle by adding: body.dark
+   =========================== */
+
+body.dark{
+  background: #0b1220;
+  color: #e9eefc;
+}
+
+/* Typography */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4{
+  color: #ffffff;
+}
+
+body.dark p{
+  color: rgba(233,238,252,.72);
+}
+
+/* Header */
+body.dark header{
+  background: rgba(11,18,32,.98);
+  box-shadow: 0 6px 18px rgba(0,0,0,.6);
+  filter: none;
+}
+
+body.dark nav a{
+  color: rgba(233,238,252,.85);
+}
+
+body.dark nav a:hover{
+  background: rgba(255,255,255,.10);
+  color: #fff;
+}
+
+/* Toggle button */
+body.dark .theme-toggle{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  color: #fff;
+}
+
+/* Hero + sections */
+body.dark .hero{
+  background: #0f1930;
+}
+
+body.dark #home,
+body.dark .mv,
+body.dark .aboutus,
+body.dark .contact-section,
+body.dark .section{
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+/* Products/blog section backgrounds */
+body.dark #career,
+body.dark #contact,
+body.dark #affiliations,
+body.dark #products{
+  background: #0f1930;
+}
+
+body.dark .ElectronicD,
+body.dark #blog{
+  background: #0b1220;
+}
+
+/* Cards */
+body.dark .product-item,
+body.dark .carrer-item,
+body.dark .blog-item,
+body.dark .ElectronicD-item,
+body.dark .career-item,
+body.dark .timeline-card,
+body.dark .affiliation-card,
+body.dark .contact-card,
+body.dark .blog-main,
+body.dark .blog-sidebar,
+body.dark .blog-box{
+  background: #101b33;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 12px 30px rgba(0,0,0,.55);
+}
+
+body.dark .hamburger,
+body.dark .product-item h4,
+body.dark .blog-item h4,
+body.dark .ElectronicD-item h4,
+body.dark .blog-box h4{
+  color: #ffffff;
+}
+
+body.dark .product-item p,
+body.dark .blog-item p,
+body.dark .ElectronicD-item p,
+body.dark .blog-box p{
+  color: rgba(233,238,252,.72);
+}
+
+/* hover borders */
+body.dark .product-item:hover,
+body.dark .blog-item:hover,
+body.dark .ElectronicD-item:hover,
+body.dark .career-item:hover,
+body.dark .timeline-card:hover,
+body.dark .affiliation-card:hover,
+body.dark .blog-box:hover{
+  border: 1px solid rgba(46,31,159,.9);
+  box-shadow: 0 14px 35px rgba(46,31,159,.35);
+}
+
+/* Summary row */
+body.dark .summary-info{
+  background: #0b1220;
+  border-top: 1px solid rgba(255,255,255,.10);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+body.dark .summary-item h3{
+  color: #ffffff;
+}
+
+body.dark .summary-item p{
+  color: rgba(233,238,252,.72);
+}
+
+/* Buttons */
+body.dark .btn,
+body.dark .career-btn,
+body.dark .subscribe-btn,
+body.dark .nav-btn{
+  background: #2e1f9f;
+  color: #fff;
+}
+
+body.dark .btn:hover,
+body.dark .career-btn:hover,
+body.dark .subscribe-btn:hover,
+body.dark .nav-btn:hover{
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+/* Forms */
+body.dark input,
+body.dark textarea{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  color: #fff;
+}
+
+body.dark input::placeholder{
+  color: rgba(233,238,252,.55);
+}
+
+/* Blog extras */
+body.dark .blog-intro{
+  background: rgba(255,255,255,.06);
+  border-left: 4px solid #2e1f9f;
+}
+
+/* Modal */
+body.dark .modal{
+  background: rgba(0,0,0,.72);
+}
+
+body.dark .modal-dialog{
+  background: #0f1930;
+  box-shadow: 0 20px 60px rgba(0,0,0,.7);
+}
+
+body.dark .modal-right{
+  color: #e9eefc;
+}
+
+body.dark .modal-close{
+  color: #fff;
+}
+
+/* Visit section (map + place cards) */
+body.dark .visit-info{
+  color: rgba(233,238,252,.8);
+}
+
+body.dark .place-icon{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  color: #7aa2ff;
+}
+
+/* Footer (keep your purple but make text softer) */
+body.dark .site-footer{
+  background: #1a1363; /* darker purple version */
+}
+
+body.dark .footer-links a,
+body.dark .footer-bottom p,
+body.dark .bottom-links a,
+body.dark .brand-desc,
+body.dark .footer-contact .contact-row{
+  color: rgba(255,255,255,.82);
+}
+
+body.dark .footer-links a:hover,
+body.dark .bottom-links a:hover{
+  color: #00c2ff;
+}
+
+/* Mobile nav drawer (your current mobile nav) */
+@media (max-width: 1000px){
+  body.dark nav{
+    background: #0f1930;
+    box-shadow: 0 14px 40px rgba(0,0,0,.7);
+  }
+
+  body.dark nav a{
+    color: rgba(233,238,252,.9);
+  }
+}

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +7,7 @@
     <title>Innovatronix, Inc.</title>
     <link rel="icon" href="assets/logo.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -15,12 +15,14 @@
 <body>
 
     <header>
-        <div class="logo">
-            <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
-            <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
-            <img src="assets/logo.jpg" alt="logo" width="40" height="40">
-            <h4>Innovatronix</h4>
-        </div>
+        <a href="homepage.html">
+            <div class="logo">
+                <source media="(orientation: landscape)" srcset="assets/logo.jpg" width="50" height="50">
+                <source media="(orientation: portrait)" srcset="assets/logo.jpg" width="50" height="50">
+                <img src="assets/logo.jpg" alt="logo" width="50" height="50">
+                <h4>Innovatronix</h4>
+            </div>
+        </a>
 
         <nav id="navMenu">
             <a href="homepage.html#products">Home</a>
@@ -41,7 +43,7 @@
     <section class="section" id="products"> <br>
         <h1>Photography Gear & Accessories</h1>
         <p>Innovatronix photography equipment catering to the needs of
-        photographers and imaging professionals</p> 
+            photographers and imaging professionals</p>
     </section>
 
     <section class="ElectronicD">
@@ -50,7 +52,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.1.jpg" alt="Innovatronix CPFlash 550W">
                 <h4>Innovatronix CPFlash 550W</h4>
-                <p>A high-powered, portable LED flash system with wireless smartphone control, compatible 
+                <p>A high-powered, portable LED flash system with wireless smartphone control, compatible
                     with DSLR and mirrorless cameras for studio-quality lighting anywhere.</p>
                 <button class="btn open-modal" data-product="cpflash550w">View Details</button>
             </div>
@@ -58,7 +60,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.2.jpg" alt="Explorer XT3">
                 <h4>Explorer XT3</h4>
-                <p>A powerful portable power supply for professional photographers, capable of running 
+                <p>A powerful portable power supply for professional photographers, capable of running
                     multiple studio flashes with fast recycling times and high energy output.</p>
                 <button class="btn open-modal" data-product="explorerxt3">View Details</button>
             </div>
@@ -69,7 +71,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.3.jpg" alt="Explorer XT SE">
                 <h4>Explorer XT SE</h4>
-                <p>A versatile power supply designed to reliably operate bi-voltage monolight units, 
+                <p>A versatile power supply designed to reliably operate bi-voltage monolight units,
                     providing extended shooting sessions with consistent flash performance.</p>
                 <button class="btn open-modal" data-product="explorerxtse">View Details</button>
             </div>
@@ -77,7 +79,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.4.jpg" alt="Explorer Mini">
                 <h4>Explorer Mini</h4>
-                <p>A compact yet powerful portable power source for photographers, supporting up to 
+                <p>A compact yet powerful portable power source for photographers, supporting up to
                     two flash units with quick recycling for on-location shoots.</p>
                 <button class="btn open-modal" data-product="explorermini">View Details</button>
             </div>
@@ -88,7 +90,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.5.jpg" alt="SpeedFire">
                 <h4>SpeedFire</h4>
-                <p>An AC-powered external supply for speedlights that drastically reduces recycling 
+                <p>An AC-powered external supply for speedlights that drastically reduces recycling
                     time and delivers unlimited flashes for studio or fixed setup photography.</p>
                 <button class="btn open-modal" data-product="speedfire">View Details</button>
             </div>
@@ -96,7 +98,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.6.jpg" alt="SpeedFire II">
                 <h4>SpeedFire II</h4>
-                <p>An upgraded external power system for Canon speedlights featuring a dummy battery 
+                <p>An upgraded external power system for Canon speedlights featuring a dummy battery
                     for cable-free operation and near-instantaneous flash recycling.</p>
                 <button class="btn open-modal" data-product="speedfireii">View Details</button>
             </div>
@@ -107,7 +109,7 @@
             <div class="ElectronicD-item">
                 <img src="assets/product3.7.jpg" alt="Evo 3">
                 <h4>Evo 3</h4>
-                <p>A professional digital photo printing machine with continuous ink system for 
+                <p>A professional digital photo printing machine with continuous ink system for
                     cost-effective production of wallet-size to A4 prints, ideal for photo businesses.</p>
                 <button class="btn open-modal" data-product="evo3">View Details</button>
             </div>
@@ -153,9 +155,12 @@
                     </div>
 
                     <div class="modal-buttons">
-                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product Manual</button>
-                        <button class="btn modal-compatibility-btn" style="margin-top: 20px; display: none;">Compatibility List</button>
-                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations Map</button>
+                        <button class="btn modal-manual-btn" style="margin-top: 20px; display: none;">Product
+                            Manual</button>
+                        <button class="btn modal-compatibility-btn"
+                            style="margin-top: 20px; display: none;">Compatibility List</button>
+                        <button class="btn modal-map-btn" style="margin-top: 20px; display: none;">View Locations
+                            Map</button>
                     </div>
 
                     <!-- Map container -->
@@ -163,7 +168,6 @@
                 </div>
             </div>
         </div>
-        <script src="backend/modal.js"></script>
     </section>
 
     <!-- FOOTER -->
@@ -221,8 +225,10 @@
                 <div class="footer-links">
                     <h4>Online Store</h4>
                     <a href="https://www.innovatronix.com/shop/">Shopify</a>
-                    <a href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
-                    <a href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
+                    <a
+                        href="https://www.amazon.com/s?k=Innovatronix%2BInc&fbclid=IwAR2pZZyaT3_jooU_qqUYKgOxwjG9O96bOXOiO9OzBogqBX-oLMH4z9tg8AA&ref=bl_dp_s_web_0">Amazon</a>
+                    <a
+                        href="https://www.lazada.com.ph/shop/innovatronix-inc?path=index.htm&lang=en&pageTypeId=1">Lazada</a>
                     <a href="https://shopee.ph/innovatronixinc?is_from_login=true">Shoppee</a>
                     <a href="https://www.tiktok.com/@innovatronixincorporated">Tiktok</a>
                 </div>
@@ -265,7 +271,8 @@
 
         </div>
     </footer>
-
-    <script src="backend/script.js"></script>
+    <script src="backend/hamburger.js"></script>
+    <script src="backend/productmodal.js"></script>
 </body>
+
 </html>
