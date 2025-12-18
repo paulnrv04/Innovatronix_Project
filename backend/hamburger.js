@@ -37,4 +37,3 @@ hamburger.addEventListener("click", () => {
     icon.classList.replace("fa-xmark", "fa-bars");
   }
 });
-
